@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - TheraTouch</title>
+  <link rel="icon" type="image/jpeg" href="images/theratouch_logo.jpg">
+  <meta name="description" content="Get in touch with the expert touch therapists at TheraTouch to book your cuddle session or ask any questions about our wellness services.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <script>
+    tailwind.config = { 
+      darkMode: 'class', 
+      theme: { 
+        extend: { 
+          colors: { 
+            mint: '#059669', /* Darkened to a rich emerald-mint for clear visibility on white */
+            cyan: '#22D3EE',
+            'dark-gray': '#333333', 
+            white: '#FFFFFF' 
+          } 
+        } 
+      } 
+    }
+  </script>
+  
+  <style>
+    [dir="rtl"] { direction: rtl; }
+    @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+    .animate-fade-in { animation: fadeInUp 0.8s ease-out; }
+  </style>
+</head>
+<body class="font-sans antialiased transition-colors duration-300 bg-white dark:bg-dark-gray flex flex-col min-h-screen">
+
+  <nav class="bg-white/80 dark:bg-[#1a1a1a]/80 backdrop-blur-lg fixed w-full top-0 z-50 shadow-sm border-b border-gray-200 dark:border-white/10 transition-all duration-300">
+    <div class="max-w-[1400px] mx-auto nav-container px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+
+        <div class="flex-shrink-0">
+          <a href="index.html" class="flex items-center space-x-3">
+            <div class="flex flex-col">
+              <span class="text-2xl font-bold text-dark-gray dark:text-white nav-logo-text">Thera<span class="text-transparent bg-clip-text bg-gradient-to-r from-mint to-cyan">Touch</span></span>
+            </div>
+          </a>
+        </div>
+
+        <div class="hidden xl:flex items-center justify-center flex-1 nav-menu-container mx-4">
+          <div class="flex items-center space-x-0.5 lg:space-x-2">
+
+            <div class="relative group">
+              <button class="nav-link text-gray-700 dark:text-gray-200 hover:text-mint dark:hover:text-mint font-medium transition duration-300 flex items-center space-x-1 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-white/5">
+                <span class="text-sm">Home</span>
+                <i class="fas fa-chevron-down text-xs"></i>
+              </button>
+              <div class="absolute left-0 mt-2 w-48 bg-white dark:bg-[#222] border border-gray-100 dark:border-gray-700 rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform group-hover:translate-y-0 translate-y-2 z-50 overflow-hidden">
+                <a href="index.html" class="block px-4 py-3 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-white/5 hover:text-mint transition duration-300">Home Page 1</a>
+                <a href="home-2.html" class="block px-4 py-3 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-white/5 hover:text-mint transition duration-300">Home Page 2</a>
+              </div>
+            </div>
+
+            <a href="about.html" class="nav-link text-gray-700 dark:text-gray-200 hover:text-mint dark:hover:text-mint font-medium transition duration-300 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-white/5 text-sm">About</a>
+            <a href="services.html" class="nav-link text-gray-700 dark:text-gray-200 hover:text-mint dark:hover:text-mint font-medium transition duration-300 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-white/5 text-sm">Services</a>
+            <a href="therapists.html" class="nav-link text-gray-700 dark:text-gray-200 hover:text-mint dark:hover:text-mint font-medium transition duration-300 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-white/5 text-sm">Therapists</a>
+            <a href="pricing.html" class="nav-link text-gray-700 dark:text-gray-200 hover:text-mint dark:hover:text-mint font-medium transition duration-300 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-white/5 text-sm">Pricing</a>
+            <a href="blog.html" class="nav-link text-gray-700 dark:text-gray-200 hover:text-mint dark:hover:text-mint font-medium transition duration-300 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-white/5 text-sm">Blog</a>
+            
+            <a href="contact.html" class="nav-link text-mint font-medium transition duration-300 px-3 py-2 rounded-lg bg-gray-100 dark:bg-white/5 text-sm">Contact</a>
+
+            <div class="relative group">
+              <button class="nav-link text-gray-700 dark:text-gray-200 hover:text-mint dark:hover:text-mint font-medium transition duration-300 flex items-center space-x-1 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-white/5">
+                <span class="text-sm">Dashboard</span>
+                <i class="fas fa-chevron-down text-xs"></i>
+              </button>
+              <div class="absolute right-0 mt-2 w-56 bg-white dark:bg-[#222] border border-gray-100 dark:border-gray-700 rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform group-hover:translate-y-0 translate-y-2 z-50 overflow-hidden">
+                <a href="admin-dashboard.html" class="block px-4 py-3 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-white/5 hover:text-mint transition duration-300">
+                  <i class="fas fa-user-shield mr-2"></i>Admin Dashboard
+                </a>
+                <a href="user-dashboard.html" class="block px-4 py-3 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-white/5 hover:text-mint transition duration-300">
+                  <i class="fas fa-user mr-2"></i>User Dashboard
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="hidden xl:flex items-center space-x-2">
+          <a href="login.html" class="nav-button text-gray-700 dark:text-gray-200 hover:text-mint px-3 py-2 rounded-lg font-medium transition duration-300 text-sm flex items-center space-x-1">
+            <span>Login</span>
+          </a>
+          <a href="register.html" class="nav-button bg-gradient-to-r from-mint to-cyan hover:opacity-90 text-white dark:text-dark-gray px-5 py-2.5 rounded-full font-bold transition duration-300 text-sm flex items-center space-x-2 shadow-md whitespace-nowrap">
+            <i class="fas fa-user-plus"></i>
+            <span>Register</span>
+          </a>
+
+          <button id="rtl-toggle" class="nav-icon-button w-10 h-10 rounded-full bg-gray-100 dark:bg-white/10 hover:bg-gray-200 dark:hover:bg-white/20 flex items-center justify-center text-gray-700 dark:text-white transition duration-300 ml-2 text-xs font-semibold" title="Toggle RTL">
+            RTL
+          </button>
+
+          <button id="theme-toggle" class="nav-icon-button w-10 h-10 rounded-full bg-gray-100 dark:bg-white/10 hover:bg-gray-200 dark:hover:bg-white/20 flex items-center justify-center text-gray-700 dark:text-white transition duration-300 ml-2" title="Toggle Theme">
+            <i class="fas fa-moon dark:hidden text-sm"></i>
+            <i class="fas fa-sun hidden dark:inline text-sm"></i>
+          </button>
+        </div>
+
+        <div class="xl:hidden flex items-center">
+          <button id="mobile-menu-button" class="text-gray-700 dark:text-gray-200 hover:text-mint focus:outline-none p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-white/10 transition duration-300">
+            <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 6h16M4 12h16M4 18h16"></path>
+              <path id="close-icon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="hidden xl:hidden bg-white/95 dark:bg-[#1a1a1a]/95 backdrop-blur-lg border-t border-gray-200 dark:border-white/10 shadow-xl">
+      <div class="px-4 pt-2 pb-6 space-y-1 max-h-[calc(100vh-80px)] overflow-y-auto">
+
+        <div>
+          <button id="mobile-home-dropdown" class="w-full flex items-center justify-between px-4 py-3 text-gray-800 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-white/5 rounded-lg transition duration-300">
+            <span class="text-sm font-medium">Home</span>
+            <i class="fas fa-chevron-down text-xs transition-transform duration-300" id="mobile-home-icon"></i>
+          </button>
+          <div id="mobile-home-menu" class="hidden pl-4 mt-1 space-y-1">
+            <a href="index.html" class="block px-4 py-2 text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-white/5 hover:text-mint rounded-lg transition duration-300 text-sm">Home Page 1</a>
+            <a href="home-2.html" class="block px-4 py-2 text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-white/5 hover:text-mint rounded-lg transition duration-300 text-sm">Home Page 2</a>
+          </div>
+        </div>
+
+        <a href="about.html" class="block px-4 py-3 text-gray-800 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-white/5 hover:text-mint rounded-lg transition duration-300 text-sm font-medium">About</a>
+        <a href="services.html" class="block px-4 py-3 text-gray-800 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-white/5 hover:text-mint rounded-lg transition duration-300 text-sm font-medium">Services</a>
+        <a href="therapists.html" class="block px-4 py-3 text-gray-800 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-white/5 hover:text-mint rounded-lg transition duration-300 text-sm font-medium">Therapists</a>
+        <a href="pricing.html" class="block px-4 py-3 text-gray-800 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-white/5 hover:text-mint rounded-lg transition duration-300 text-sm font-medium">Pricing</a>
+        <a href="blog.html" class="block px-4 py-3 text-gray-800 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-white/5 hover:text-mint rounded-lg transition duration-300 text-sm font-medium">Blog</a>
+        
+        <a href="contact.html" class="block px-4 py-3 text-mint bg-gray-50 dark:bg-white/5 rounded-lg transition duration-300 text-sm font-medium">Contact</a>
+
+        <div>
+          <button id="mobile-dashboard-dropdown" class="w-full flex items-center justify-between px-4 py-3 text-gray-800 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-white/5 rounded-lg transition duration-300">
+            <span class="text-sm font-medium">Dashboard</span>
+            <i class="fas fa-chevron-down text-xs transition-transform duration-300" id="mobile-dashboard-icon"></i>
+          </button>
+          <div id="mobile-dashboard-menu" class="hidden pl-4 mt-1 space-y-1">
+            <a href="admin-dashboard.html" class="block px-4 py-2 text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-white/5 hover:text-mint rounded-lg transition duration-300 text-sm">
+              <i class="fas fa-user-shield mr-2"></i>Admin Dashboard
+            </a>
+            <a href="user-dashboard.html" class="block px-4 py-2 text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-white/5 hover:text-mint rounded-lg transition duration-300 text-sm">
+              <i class="fas fa-user mr-2"></i>User Dashboard
+            </a>
+          </div>
+        </div>
+
+        <div class="pt-4 border-t border-gray-200 dark:border-white/10 mt-3 space-y-3">
+          <div class="grid grid-cols-2 gap-3">
+            <a href="login.html" class="block w-full bg-gray-100 dark:bg-white/5 hover:bg-gray-200 dark:hover:bg-white/10 text-gray-800 dark:text-white px-4 py-3 rounded-lg font-medium text-center transition duration-300 text-sm">
+              Login
+            </a>
+            <a href="register.html" class="block w-full bg-gradient-to-r from-mint to-cyan hover:opacity-90 text-white dark:text-dark-gray px-4 py-3 rounded-lg font-bold text-center transition duration-300 shadow-md text-sm">
+              Register
+            </a>
+          </div>
+
+          <div class="grid grid-cols-2 gap-3 mt-2">
+            <button id="mobile-rtl-toggle" class="bg-gray-100 dark:bg-white/5 hover:bg-gray-200 dark:hover:bg-white/10 text-gray-800 dark:text-white px-4 py-3 rounded-lg font-medium text-center transition duration-300 text-sm">
+              <i class="fas fa-language mr-2"></i>RTL
+            </button>
+            <button id="mobile-theme-toggle" class="bg-gray-100 dark:bg-white/5 hover:bg-gray-200 dark:hover:bg-white/10 text-gray-800 dark:text-white px-4 py-3 rounded-lg font-medium text-center transition duration-300 text-sm">
+              <i class="fas fa-moon mr-2 dark:hidden"></i>
+              <i class="fas fa-sun mr-2 hidden dark:inline"></i>
+              <span>Theme</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="flex-grow pt-20">
+
+    <section class="min-h-[calc(100vh-5rem)] flex items-center justify-center w-full relative overflow-hidden py-16 bg-cover bg-center bg-no-repeat" style="background-image: url('image/pexels-karola-g-6629608.jpg');">
+      <div class="absolute inset-0 bg-black/50"></div> <div class="absolute top-0 right-0 w-64 h-64 bg-mint/20 rounded-full blur-3xl z-0"></div>
+      <div class="absolute bottom-0 left-0 w-80 h-80 bg-cyan/20 rounded-full blur-3xl z-0"></div>
+      
+      <div class="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center animate-fade-in text-white">
+        <h1 class="text-4xl md:text-5xl lg:text-7xl font-bold mb-6">Get in <span class="text-transparent bg-clip-text bg-gradient-to-r from-mint to-cyan">Touch</span></h1>
+        <p class="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto">Have a question or ready to book your session? We'd love to hear from you. Scroll down to see how you can reach us.</p>
+        <div class="mt-12 animate-bounce flex justify-center">
+          <i class="fas fa-chevron-down text-3xl text-mint/70"></i>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 bg-white dark:bg-[#1a1a1a]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-16 items-start">
+          
+          <div class="bg-gray-50 dark:bg-[#222] p-8 md:p-10 rounded-3xl shadow-sm border border-gray-100 dark:border-white/5 animate-fade-in">
+            <h3 class="text-2xl font-bold text-dark-gray dark:text-white mb-6">Send us a Message</h3>
+            <form action="#" method="POST" class="space-y-6">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <label for="first-name" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">First Name</label>
+                  <input type="text" id="first-name" class="w-full bg-white dark:bg-[#1a1a1a] border border-gray-200 dark:border-gray-700 text-gray-900 dark:text-white rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-mint focus:border-transparent transition duration-300" placeholder="John">
+                </div>
+                <div>
+                  <label for="last-name" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Last Name</label>
+                  <input type="text" id="last-name" class="w-full bg-white dark:bg-[#1a1a1a] border border-gray-200 dark:border-gray-700 text-gray-900 dark:text-white rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-mint focus:border-transparent transition duration-300" placeholder="Doe">
+                </div>
+              </div>
+
+              <div>
+                <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Email Address</label>
+                <input type="email" id="email" class="w-full bg-white dark:bg-[#1a1a1a] border border-gray-200 dark:border-gray-700 text-gray-900 dark:text-white rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-mint focus:border-transparent transition duration-300" placeholder="john@example.com">
+              </div>
+
+              <div>
+                <label for="subject" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Subject</label>
+                <select id="subject" class="w-full bg-white dark:bg-[#1a1a1a] border border-gray-200 dark:border-gray-700 text-gray-900 dark:text-white rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-mint focus:border-transparent transition duration-300 appearance-none">
+                  <option>General Inquiry</option>
+                  <option>Book a Session</option>
+                  <option>Pricing & Plans</option>
+                  <option>Therapist Availability</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="message" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Your Message</label>
+                <textarea id="message" rows="5" class="w-full bg-white dark:bg-[#1a1a1a] border border-gray-200 dark:border-gray-700 text-gray-900 dark:text-white rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-mint focus:border-transparent transition duration-300 resize-none" placeholder="How can we help you today?"></textarea>
+              </div>
+
+              <button type="submit" class="w-full bg-gradient-to-r from-mint to-cyan hover:opacity-90 text-white font-bold py-4 rounded-xl transition duration-300 shadow-lg hover:shadow-mint/30 flex justify-center items-center">
+                <span>Send Message</span>
+                <i class="fas fa-paper-plane ml-2"></i>
+              </button>
+            </form>
+          </div>
+
+          <div class="space-y-10 animate-fade-in" style="animation-delay: 0.2s;">
+            <div>
+              <h2 class="text-3xl font-bold text-dark-gray dark:text-white mb-6">Contact Information</h2>
+              <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-8">
+                Our compassionate team is here to answer any questions you may have about our services, safety protocols, or booking process. Reach out to us through any of the channels below.
+              </p>
+            </div>
+
+            <div class="space-y-6">
+              <div class="flex items-start">
+                <div class="w-14 h-14 bg-mint/10 dark:bg-mint/20 text-mint rounded-xl flex items-center justify-center text-xl flex-shrink-0 mr-5 shadow-sm">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div>
+                  <h4 class="text-lg font-bold text-dark-gray dark:text-white mb-1">Our Location</h4>
+                  <p class="text-gray-600 dark:text-gray-400">123 Wellness Street<br>Salem, Tamil Nadu, 636001<br>India</p>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <div class="w-14 h-14 bg-cyan/10 dark:bg-cyan/20 text-cyan rounded-xl flex items-center justify-center text-xl flex-shrink-0 mr-5 shadow-sm">
+                  <i class="fas fa-phone-alt"></i>
+                </div>
+                <div>
+                  <h4 class="text-lg font-bold text-dark-gray dark:text-white mb-1">Phone Number</h4>
+                  <a href="tel:+919876543210" class="text-gray-600 dark:text-gray-400 hover:text-mint transition duration-300">+91 98765 43210</a>
+                  <p class="text-sm text-gray-500 mt-1">Available during working hours</p>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <div class="w-14 h-14 bg-mint/10 dark:bg-mint/20 text-mint rounded-xl flex items-center justify-center text-xl flex-shrink-0 mr-5 shadow-sm">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div>
+                  <h4 class="text-lg font-bold text-dark-gray dark:text-white mb-1">Email Address</h4>
+                  <a href="mailto:info@theratouch.com" class="text-gray-600 dark:text-gray-400 hover:text-mint transition duration-300">info@theratouch.com</a>
+                  <p class="text-sm text-gray-500 mt-1">We aim to reply within 24 hours</p>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <div class="w-14 h-14 bg-cyan/10 dark:bg-cyan/20 text-cyan rounded-xl flex items-center justify-center text-xl flex-shrink-0 mr-5 shadow-sm">
+                  <i class="fas fa-clock"></i>
+                </div>
+                <div>
+                  <h4 class="text-lg font-bold text-dark-gray dark:text-white mb-1">Working Hours</h4>
+                  <p class="text-gray-600 dark:text-gray-400">Monday - Saturday: 9:00 AM - 8:00 PM</p>
+                  <p class="text-gray-600 dark:text-gray-400">Sunday: Closed (By special appointment only)</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-6 border-t border-gray-200 dark:border-gray-800">
+              <h4 class="text-lg font-bold text-dark-gray dark:text-white mb-4">Follow Our Journey</h4>
+              <div class="flex space-x-4">
+                <a href="#" class="w-12 h-12 bg-gray-100 dark:bg-[#222] text-gray-600 dark:text-gray-400 hover:bg-mint hover:text-white dark:hover:bg-mint dark:hover:text-white rounded-full flex items-center justify-center transition-all duration-300">
+                  <i class="fab fa-facebook-f text-lg"></i>
+                </a>
+                <a href="#" class="w-12 h-12 bg-gray-100 dark:bg-[#222] text-gray-600 dark:text-gray-400 hover:bg-cyan hover:text-white dark:hover:bg-cyan dark:hover:text-dark-gray rounded-full flex items-center justify-center transition-all duration-300">
+                  <i class="fab fa-instagram text-lg"></i>
+                </a>
+                <a href="#" class="w-12 h-12 bg-gray-100 dark:bg-[#222] text-gray-600 dark:text-gray-400 hover:bg-mint hover:text-white dark:hover:bg-mint dark:hover:text-white rounded-full flex items-center justify-center transition-all duration-300">
+                  <i class="fab fa-twitter text-lg"></i>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="mt-20 animate-fade-in" style="animation-delay: 0.4s;">
+          <div class="text-center mb-10">
+            <h2 class="text-3xl font-bold text-dark-gray dark:text-white mb-4">Find Us on the Map</h2>
+            <p class="text-gray-600 dark:text-gray-400">Visit our serene sanctuary located in the heart of Salem.</p>
+          </div>
+          <div class="w-full h-[400px] md:h-[500px] rounded-3xl overflow-hidden shadow-xl border-4 border-white dark:border-[#222] relative z-10 bg-gray-200 dark:bg-gray-800">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125022.25925324395!2d78.07724285149303!3d11.653733221946394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babf1ccf52cba0b%3A0xee9989007068ca47!2sSalem%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+              width="100%" 
+              height="100%" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"
+              class="absolute inset-0 w-full h-full object-cover">
+            </iframe>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-dark-gray text-white pt-20 pb-10 mt-auto border-t-4 border-mint">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+        
+        <div>
+          <h3 class="text-2xl font-bold mb-4">Thera<span class="text-transparent bg-clip-text bg-gradient-to-r from-mint to-cyan">Touch</span></h3>
+          <p class="text-gray-400 mb-6 leading-relaxed">
+            Empowering you to feel connected, relaxed, and comforted through professional cuddling and ethical therapeutic touch services.
+          </p>
+          <div class="flex space-x-4">
+            <a href="#" class="w-10 h-10 bg-white/5 hover:bg-mint hover:text-white dark:hover:text-dark-gray rounded-full flex items-center justify-center transition-all duration-300">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="w-10 h-10 bg-white/5 hover:bg-mint hover:text-white dark:hover:text-dark-gray rounded-full flex items-center justify-center transition-all duration-300">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="w-10 h-10 bg-white/5 hover:bg-mint hover:text-white dark:hover:text-dark-gray rounded-full flex items-center justify-center transition-all duration-300">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="w-10 h-10 bg-white/5 hover:bg-mint hover:text-white dark:hover:text-dark-gray rounded-full flex items-center justify-center transition-all duration-300">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="text-xl font-bold mb-6 text-white">Quick Links</h4>
+          <ul class="space-y-3">
+            <li><a href="index.html" class="text-gray-400 hover:text-mint transition-colors duration-300">Home</a></li>
+            <li><a href="about.html" class="text-gray-400 hover:text-mint transition-colors duration-300">About Us</a></li>
+            <li><a href="therapists.html" class="text-gray-400 hover:text-mint transition-colors duration-300">Our Therapists</a></li>
+            <li><a href="pricing.html" class="text-gray-400 hover:text-mint transition-colors duration-300">Pricing Plans</a></li>
+            <li><a href="blog.html" class="text-gray-400 hover:text-mint transition-colors duration-300">Wellness Blog</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-xl font-bold mb-6 text-white">Our Services</h4>
+          <ul class="space-y-3">
+            <li><a href="services.html" class="text-gray-400 hover:text-mint transition-colors duration-300">Cuddle Therapy</a></li>
+            <li><a href="services.html" class="text-gray-400 hover:text-mint transition-colors duration-300">Platonic Touch</a></li>
+            <li><a href="services.html" class="text-gray-400 hover:text-mint transition-colors duration-300">Active Listening</a></li>
+            <li><a href="services.html" class="text-gray-400 hover:text-mint transition-colors duration-300">Anxiety Relief Sessions</a></li>
+            <li><a href="services.html" class="text-gray-400 hover:text-mint transition-colors duration-300">Virtual Companionship</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-xl font-bold mb-6 text-white">Contact Us</h4>
+          <ul class="space-y-4">
+            <li class="flex items-start">
+              <i class="fas fa-map-marker-alt text-mint mt-1 mr-3"></i>
+              <span class="text-gray-400">123 Wellness Street, Salem, Tamil Nadu, India</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-phone text-mint mr-3"></i>
+              <a href="tel:+919876543210" class="text-gray-400 hover:text-mint transition-colors">+91 98765 43210</a>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-envelope text-mint mr-3"></i>
+              <a href="mailto:info@theratouch.com" class="text-gray-400 hover:text-mint transition-colors">info@theratouch.com</a>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-clock text-mint mr-3"></i>
+              <span class="text-gray-400">Mon - Sat: 9AM - 8PM</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center">
+        <p class="text-gray-500 text-sm mb-4 md:mb-0">
+          © 2026 TheraTouch. All rights reserved.
+        </p>
+        <div class="flex space-x-6">
+          <a href="login.html" class="text-gray-500 hover:text-mint text-sm transition-colors duration-300">Client Login</a>
+          <a href="#" class="text-gray-500 hover:text-mint text-sm transition-colors duration-300">Privacy Policy</a>
+          <a href="#" class="text-gray-500 hover:text-mint text-sm transition-colors duration-300">Code of Conduct</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script>
+    // Theme Toggle
+    const themeToggle = document.getElementById('theme-toggle');
+    const mobileThemeToggle = document.getElementById('mobile-theme-toggle');
+    const html = document.documentElement;
+
+    function toggleTheme() {
+      if (html.classList.contains('dark')) {
+        html.classList.remove('dark');
+        localStorage.setItem('theme', 'light');
+      } else {
+        html.classList.add('dark');
+        localStorage.setItem('theme', 'dark');
+      }
+    }
+
+    if (themeToggle) themeToggle.addEventListener('click', toggleTheme);
+    if (mobileThemeToggle) mobileThemeToggle.addEventListener('click', toggleTheme);
+    if (localStorage.getItem('theme') === 'dark') html.classList.add('dark');
+
+    // RTL Toggle
+    const rtlToggle = document.getElementById('rtl-toggle');
+    const mobileRtlToggle = document.getElementById('mobile-rtl-toggle');
+
+    function toggleRTL() {
+      if (html.getAttribute('dir') === 'rtl') {
+        html.removeAttribute('dir');
+        localStorage.setItem('direction', 'ltr');
+      } else {
+        html.setAttribute('dir', 'rtl');
+        localStorage.setItem('direction', 'rtl');
+      }
+    }
+
+    if (rtlToggle) rtlToggle.addEventListener('click', toggleRTL);
+    if (mobileRtlToggle) mobileRtlToggle.addEventListener('click', toggleRTL);
+    if (localStorage.getItem('direction') === 'rtl') html.setAttribute('dir', 'rtl');
+
+    // Mobile Menu Toggle
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIcon = document.getElementById('menu-icon');
+    const closeIcon = document.getElementById('close-icon');
+
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      menuIcon.classList.toggle('hidden');
+      closeIcon.classList.toggle('hidden');
+    });
+
+    // Mobile Dropdowns Toggle Function
+    function setupMobileDropdown(dropdownId, menuId, iconId) {
+      const dropdown = document.getElementById(dropdownId);
+      const menu = document.getElementById(menuId);
+      const icon = document.getElementById(iconId);
+      
+      if(dropdown && menu && icon) {
+        dropdown.addEventListener('click', () => {
+          menu.classList.toggle('hidden');
+          icon.style.transform = menu.classList.contains('hidden') ? 'rotate(0deg)' : 'rotate(180deg)';
+        });
+      }
+    }
+
+    // Initialize dropdowns
+    setupMobileDropdown('mobile-home-dropdown', 'mobile-home-menu', 'mobile-home-icon');
+    setupMobileDropdown('mobile-dashboard-dropdown', 'mobile-dashboard-menu', 'mobile-dashboard-icon');
+
+  </script>
+</body>
+</html>
