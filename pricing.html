@@ -44,7 +44,7 @@
         <div class="flex-shrink-0">
           <a href="index.html" class="flex items-center space-x-3">
             <div class="flex flex-col">
-              <span class="text-2xl font-bold text-dark-gray dark:text-white nav-logo-text">Thera<span class="text-transparent bg-clip-text bg-gradient-to-r from-mint to-cyan">Touch</span></span>
+              <span class="text-2xl font-semibold text-dark-gray dark:text-white nav-logo-text">Thera<span class="text-transparent bg-clip-text bg-gradient-to-r from-mint to-cyan">Touch</span></span>
             </div>
           </a>
         </div>
@@ -91,15 +91,12 @@
         </div>
 
         <div class="hidden xl:flex items-center space-x-2">
-          <a href="login.html" class="nav-button text-gray-700 dark:text-gray-200 hover:text-mint px-3 py-2 rounded-lg font-medium transition duration-300 text-sm flex items-center space-x-1">
-            <span>Login</span>
-          </a>
-          <a href="register.html" class="nav-button bg-gradient-to-r from-mint to-cyan hover:opacity-90 text-white dark:text-dark-gray px-5 py-2.5 rounded-full font-bold transition duration-300 text-sm flex items-center space-x-2 shadow-md whitespace-nowrap">
-            <i class="fas fa-user-plus"></i>
-            <span>Register</span>
+          <!-- Styled Login as secondary CTA without an icon -->
+          <a href="login.html" class="nav-button border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-200 hover:border-mint dark:hover:border-mint hover:text-mint dark:hover:text-mint px-5 py-2.5 rounded-full font-semibold transition duration-300 text-sm flex items-center whitespace-nowrap">
+            Login
           </a>
 
-          <button id="rtl-toggle" class="nav-icon-button w-10 h-10 rounded-full bg-gray-100 dark:bg-white/10 hover:bg-gray-200 dark:hover:bg-white/20 flex items-center justify-center text-gray-700 dark:text-white transition duration-300 ml-2 text-xs font-semibold" title="Toggle RTL">
+          <button id="rtl-toggle" class="nav-icon-button w-10 h-10 rounded-full bg-gray-100 dark:bg-white/10 hover:bg-gray-200 dark:hover:bg-white/20 flex items-center justify-center text-gray-700 dark:text-white transition duration-300 ml-2 text-xs font-medium" title="Toggle RTL">
             RTL
           </button>
 
@@ -160,12 +157,9 @@
         </div>
 
         <div class="pt-4 border-t border-gray-200 dark:border-white/10 mt-3 space-y-3">
-          <div class="grid grid-cols-2 gap-3">
-            <a href="login.html" class="block w-full bg-gray-100 dark:bg-white/5 hover:bg-gray-200 dark:hover:bg-white/10 text-gray-800 dark:text-white px-4 py-3 rounded-lg font-medium text-center transition duration-300 text-sm">
+          <div class="grid grid-cols-1 gap-3">
+            <a href="login.html" class="block w-full border border-gray-300 dark:border-gray-600 hover:border-mint dark:hover:border-mint text-gray-800 dark:text-white px-4 py-3 rounded-lg font-medium text-center transition duration-300 text-sm">
               Login
-            </a>
-            <a href="register.html" class="block w-full bg-gradient-to-r from-mint to-cyan hover:opacity-90 text-white dark:text-dark-gray px-4 py-3 rounded-lg font-bold text-center transition duration-300 shadow-md text-sm">
-              Register
             </a>
           </div>
 
@@ -196,7 +190,7 @@
       <div class="absolute bottom-0 left-0 w-80 h-80 bg-cyan/20 rounded-full blur-3xl z-0"></div>
       
       <div class="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center animate-fade-in flex flex-col items-center justify-center">
-        <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-white">
+        <h1 class="text-4xl md:text-6xl lg:text-7xl font-semibold mb-6 text-white">
           Transparent <span class="text-transparent bg-clip-text bg-gradient-to-r from-mint to-cyan">Pricing</span>
         </h1>
         <p class="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto mb-12">
@@ -208,18 +202,18 @@
     <section class="py-24 bg-gray-50 dark:bg-[#111111] transition-colors duration-300">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-          <h2 class="text-sm font-bold text-mint tracking-widest uppercase mb-2">Pay Per Session</h2>
-          <h3 class="text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-white">Core Therapy Packages</h3>
+          <h2 class="text-sm font-medium text-mint tracking-widest uppercase mb-2">Pay Per Session</h2>
+          <h3 class="text-3xl md:text-4xl font-semibold text-gray-900 dark:text-white">Core Therapy Packages</h3>
           <p class="mt-4 text-gray-600 dark:text-gray-400">All sessions take place in our sanitized, secure therapeutic studios.</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
           
           <div class="bg-white dark:bg-[#1a1a1a] rounded-2xl shadow-lg border border-gray-100 dark:border-white/5 p-8 transition-transform duration-300 hover:-translate-y-2">
-            <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-2">The Intro</h4>
+            <h4 class="text-xl font-medium text-gray-900 dark:text-white mb-2">The Intro</h4>
             <p class="text-gray-500 dark:text-gray-400 text-sm mb-6">Perfect for first-timers nervous about touch.</p>
             <div class="flex items-baseline mb-6">
-              <span class="text-4xl font-extrabold text-gray-900 dark:text-white">$80</span>
+              <span class="text-4xl font-semibold text-gray-900 dark:text-white">$80</span>
               <span class="text-gray-500 dark:text-gray-400 ml-2">/ 45 mins</span>
             </div>
             <ul class="space-y-4 mb-8">
@@ -228,15 +222,15 @@
               <li class="flex items-start"><i class="fas fa-check text-mint mt-1 mr-3"></i><span class="text-gray-600 dark:text-gray-300 text-sm">Choice of background music</span></li>
               <li class="flex items-start opacity-50"><i class="fas fa-times text-red-400 mt-1 mr-3"></i><span class="text-gray-500 text-sm">Deep pressure therapy</span></li>
             </ul>
-            <a href="register.html" class="block w-full py-3 px-4 bg-gray-100 dark:bg-white/10 hover:bg-gray-200 dark:hover:bg-white/20 text-gray-900 dark:text-white rounded-xl text-center font-bold transition-colors duration-300">Book Intro</a>
+            <a href="register.html" class="block w-full py-3 px-4 bg-gray-100 dark:bg-white/10 hover:bg-gray-200 dark:hover:bg-white/20 text-gray-900 dark:text-white rounded-xl text-center font-semibold transition-colors duration-300">Book Intro</a>
           </div>
 
           <div class="bg-white dark:bg-[#1a1a1a] rounded-2xl shadow-2xl border-2 border-mint relative p-8 transform scale-100 md:scale-105 z-10">
-            <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-mint to-cyan text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wide">Most Popular</div>
-            <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-2">The Standard</h4>
+            <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-mint to-cyan text-white px-4 py-1 rounded-full text-xs font-medium uppercase tracking-wide">Most Popular</div>
+            <h4 class="text-xl font-medium text-gray-900 dark:text-white mb-2">The Standard</h4>
             <p class="text-gray-500 dark:text-gray-400 text-sm mb-6">The ideal length for deep nervous system reset.</p>
             <div class="flex items-baseline mb-6">
-              <span class="text-5xl font-extrabold text-gray-900 dark:text-white">$140</span>
+              <span class="text-5xl font-semibold text-gray-900 dark:text-white">$140</span>
               <span class="text-gray-500 dark:text-gray-400 ml-2">/ 90 mins</span>
             </div>
             <ul class="space-y-4 mb-8">
@@ -245,14 +239,14 @@
               <li class="flex items-start"><i class="fas fa-check text-mint mt-1 mr-3"></i><span class="text-gray-600 dark:text-gray-300 text-sm">Active listening & emotional support</span></li>
               <li class="flex items-start"><i class="fas fa-check text-mint mt-1 mr-3"></i><span class="text-gray-600 dark:text-gray-300 text-sm">Basic somatic grounding exercises</span></li>
             </ul>
-            <a href="register.html" class="block w-full py-3 px-4 bg-gradient-to-r from-mint to-cyan hover:opacity-90 text-white rounded-xl text-center font-bold transition-opacity duration-300 shadow-md">Book Standard</a>
+            <a href="register.html" class="block w-full py-3 px-4 bg-gradient-to-r from-mint to-cyan hover:opacity-90 text-white rounded-xl text-center font-semibold transition-opacity duration-300 shadow-md">Book Standard</a>
           </div>
 
           <div class="bg-white dark:bg-[#1a1a1a] rounded-2xl shadow-lg border border-gray-100 dark:border-white/5 p-8 transition-transform duration-300 hover:-translate-y-2">
-            <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-2">The Immersive</h4>
+            <h4 class="text-xl font-medium text-gray-900 dark:text-white mb-2">The Immersive</h4>
             <p class="text-gray-500 dark:text-gray-400 text-sm mb-6">Profound relaxation for severe touch starvation.</p>
             <div class="flex items-baseline mb-6">
-              <span class="text-4xl font-extrabold text-gray-900 dark:text-white">$250</span>
+              <span class="text-4xl font-semibold text-gray-900 dark:text-white">$250</span>
               <span class="text-gray-500 dark:text-gray-400 ml-2">/ 3 hours</span>
             </div>
             <ul class="space-y-4 mb-8">
@@ -261,7 +255,7 @@
               <li class="flex items-start"><i class="fas fa-check text-mint mt-1 mr-3"></i><span class="text-gray-600 dark:text-gray-300 text-sm">Complimentary aromatherapy</span></li>
               <li class="flex items-start"><i class="fas fa-check text-mint mt-1 mr-3"></i><span class="text-gray-600 dark:text-gray-300 text-sm">Aftercare email follow-up</span></li>
             </ul>
-            <a href="register.html" class="block w-full py-3 px-4 bg-gray-100 dark:bg-white/10 hover:bg-gray-200 dark:hover:bg-white/20 text-gray-900 dark:text-white rounded-xl text-center font-bold transition-colors duration-300">Book Immersive</a>
+            <a href="register.html" class="block w-full py-3 px-4 bg-gray-100 dark:bg-white/10 hover:bg-gray-200 dark:hover:bg-white/20 text-gray-900 dark:text-white rounded-xl text-center font-semibold transition-colors duration-300">Book Immersive</a>
           </div>
 
         </div>
@@ -271,14 +265,14 @@
     <section class="py-24 bg-white dark:bg-dark-gray transition-colors duration-300 border-t border-gray-100 dark:border-white/5">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
-          <h2 class="text-sm font-bold text-cyan tracking-widest uppercase mb-2">Commit to Yourself</h2>
-          <h3 class="text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-white">Monthly Wellness Memberships</h3>
+          <h2 class="text-sm font-medium text-cyan tracking-widest uppercase mb-2">Commit to Yourself</h2>
+          <h3 class="text-3xl md:text-4xl font-semibold text-gray-900 dark:text-white">Monthly Wellness Memberships</h3>
           <p class="mt-4 text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">Consistent therapeutic touch yields the highest reduction in cortisol and anxiety. Save up to 20% by committing to a monthly routine.</p>
         </div>
 
         <div class="flex justify-center mb-12">
           <div class="bg-gray-100 dark:bg-[#1a1a1a] p-1 rounded-xl inline-flex items-center">
-            <button class="px-6 py-2 rounded-lg bg-white dark:bg-dark-gray text-gray-900 dark:text-white font-bold shadow-sm text-sm">Billed Monthly</button>
+            <button class="px-6 py-2 rounded-lg bg-white dark:bg-dark-gray text-gray-900 dark:text-white font-semibold shadow-sm text-sm">Billed Monthly</button>
             <button class="px-6 py-2 rounded-lg text-gray-500 hover:text-gray-900 dark:hover:text-white font-medium text-sm transition-colors duration-300">Billed Quarterly <span class="text-xs text-mint ml-1">-10%</span></button>
           </div>
         </div>
@@ -287,10 +281,10 @@
           
           <div class="flex flex-col sm:flex-row bg-gray-50 dark:bg-[#111111] rounded-2xl overflow-hidden shadow-lg border border-gray-100 dark:border-white/5">
             <div class="p-8 sm:w-1/2 flex flex-col justify-center border-b sm:border-b-0 sm:border-r border-gray-200 dark:border-gray-800">
-              <h4 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">The Grounding Plan</h4>
+              <h4 class="text-2xl font-medium text-gray-900 dark:text-white mb-2">The Grounding Plan</h4>
               <p class="text-sm text-gray-500 dark:text-gray-400 mb-6">Maintenance care for ongoing stress relief.</p>
-              <div class="text-4xl font-extrabold text-gray-900 dark:text-white mb-2">$250<span class="text-lg text-gray-500 font-normal">/mo</span></div>
-              <p class="text-mint text-sm font-semibold">Saves $30 monthly</p>
+              <div class="text-4xl font-semibold text-gray-900 dark:text-white mb-2">$250<span class="text-lg text-gray-500 font-normal">/mo</span></div>
+              <p class="text-mint text-sm font-medium">Saves $30 monthly</p>
             </div>
             <div class="p-8 sm:w-1/2 flex flex-col justify-between">
               <ul class="space-y-3 mb-6">
@@ -298,16 +292,16 @@
                 <li class="flex items-center text-sm text-gray-600 dark:text-gray-300"><i class="fas fa-star text-cyan mr-3"></i> Priority weekend booking</li>
                 <li class="flex items-center text-sm text-gray-600 dark:text-gray-300"><i class="fas fa-gift text-cyan mr-3"></i> 1 Free Add-on per month</li>
               </ul>
-              <button class="w-full py-3 bg-dark-gray dark:bg-white text-white dark:text-dark-gray font-bold rounded-xl hover:opacity-90 transition-opacity">Subscribe</button>
+              <button class="w-full py-3 bg-dark-gray dark:bg-white text-white dark:text-dark-gray font-semibold rounded-xl hover:opacity-90 transition-opacity">Subscribe</button>
             </div>
           </div>
 
           <div class="flex flex-col sm:flex-row bg-gray-50 dark:bg-[#111111] rounded-2xl overflow-hidden shadow-lg border border-mint">
             <div class="p-8 sm:w-1/2 flex flex-col justify-center border-b sm:border-b-0 sm:border-r border-gray-200 dark:border-gray-800 bg-mint/5 dark:bg-mint/10">
-              <h4 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">The Deep Connection</h4>
+              <h4 class="text-2xl font-medium text-gray-900 dark:text-white mb-2">The Deep Connection</h4>
               <p class="text-sm text-gray-500 dark:text-gray-400 mb-6">Intensive care for severe touch starvation.</p>
-              <div class="text-4xl font-extrabold text-gray-900 dark:text-white mb-2">$460<span class="text-lg text-gray-500 font-normal">/mo</span></div>
-              <p class="text-mint text-sm font-semibold">Saves $100 monthly</p>
+              <div class="text-4xl font-semibold text-gray-900 dark:text-white mb-2">$460<span class="text-lg text-gray-500 font-normal">/mo</span></div>
+              <p class="text-mint text-sm font-medium">Saves $100 monthly</p>
             </div>
             <div class="p-8 sm:w-1/2 flex flex-col justify-between">
               <ul class="space-y-3 mb-6">
@@ -315,7 +309,7 @@
                 <li class="flex items-center text-sm text-gray-600 dark:text-gray-300"><i class="fas fa-phone-alt text-mint mr-3"></i> 24/7 Priority booking</li>
                 <li class="flex items-center text-sm text-gray-600 dark:text-gray-300"><i class="fas fa-infinity text-mint mr-3"></i> Unlimited free Add-ons</li>
               </ul>
-              <button class="w-full py-3 bg-gradient-to-r from-mint to-cyan text-white font-bold rounded-xl hover:opacity-90 transition-opacity shadow-md">Subscribe</button>
+              <button class="w-full py-3 bg-gradient-to-r from-mint to-cyan text-white font-semibold rounded-xl hover:opacity-90 transition-opacity shadow-md">Subscribe</button>
             </div>
           </div>
 
@@ -326,60 +320,70 @@
     <section class="py-24 bg-gray-50 dark:bg-[#111111] transition-colors duration-300 overflow-x-auto">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-          <h2 class="text-sm font-bold text-mint tracking-widest uppercase mb-2">Deep Dive</h2>
-          <h3 class="text-3xl font-extrabold text-gray-900 dark:text-white">Detailed Feature Comparison</h3>
+          <h2 class="text-sm font-medium text-mint tracking-widest uppercase mb-2">Deep Dive</h2>
+          <h3 class="text-3xl font-semibold text-gray-900 dark:text-white">Detailed Feature Comparison</h3>
         </div>
 
-        <div class="bg-white dark:bg-[#1a1a1a] rounded-2xl shadow-xl overflow-hidden border border-gray-100 dark:border-white/5">
-          <table class="w-full text-left border-collapse min-w-[800px]">
+        <div class="bg-white dark:bg-[#1a1a1a] rounded-2xl shadow-xl overflow-x-auto border border-gray-100 dark:border-white/5">
+          <table class="w-full text-left border-collapse table-fixed min-w-[800px]">
             <thead>
               <tr class="bg-gray-100 dark:bg-[#222]">
-                <th class="p-5 border-b border-gray-200 dark:border-gray-700 text-lg font-bold text-gray-900 dark:text-white w-1/4">Session Features</th>
-                <th class="p-5 border-b border-gray-200 dark:border-gray-700 text-center text-lg font-bold text-gray-900 dark:text-white w-1/4">Intro <span class="block text-xs text-gray-500 font-normal">45 Mins</span></th>
-                <th class="p-5 border-b-2 border-mint text-center bg-mint/5 dark:bg-mint/10 w-1/4">
-                  <span class="inline-block bg-mint text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-2 shadow-sm">Most Popular</span>
-                  <span class="block text-lg font-bold text-mint">Standard</span>
+                <th class="p-5 border-b border-gray-200 dark:border-gray-700 text-lg font-medium text-gray-900 dark:text-white w-2/5 align-middle">Session Features</th>
+                <th class="p-5 border-b border-gray-200 dark:border-gray-700 text-center align-middle w-1/5">
+                  <div class="h-6 mb-2"></div>
+                  <span class="block text-lg font-medium text-gray-900 dark:text-white">Intro</span>
+                  <span class="block text-xs text-gray-500 font-normal">45 Mins</span>
+                </th>
+                <th class="p-5 border-b-2 border-mint text-center bg-mint/5 dark:bg-mint/10 align-middle w-1/5">
+                  <div class="h-6 mb-2 flex items-center justify-center">
+                    <span class="inline-block bg-mint text-white text-[10px] font-medium px-3 py-1 rounded-full uppercase tracking-wider shadow-sm">Most Popular</span>
+                  </div>
+                  <span class="block text-lg font-medium text-mint">Standard</span>
                   <span class="block text-xs text-gray-500 font-normal">90 Mins</span>
                 </th>
-                <th class="p-5 border-b border-gray-200 dark:border-gray-700 text-center text-lg font-bold text-gray-900 dark:text-white w-1/4">Immersive <span class="block text-xs text-gray-500 font-normal">180 Mins</span></th>
+                <th class="p-5 border-b border-gray-200 dark:border-gray-700 text-center align-middle w-1/5">
+                  <div class="h-6 mb-2"></div>
+                  <span class="block text-lg font-medium text-gray-900 dark:text-white">Immersive</span>
+                  <span class="block text-xs text-gray-500 font-normal">180 Mins</span>
+                </th>
               </tr>
             </thead>
             <tbody class="text-sm text-gray-600 dark:text-gray-300">
               <tr class="hover:bg-gray-50 dark:hover:bg-white/5 transition-colors">
-                <td class="p-5 border-b border-gray-100 dark:border-gray-800 font-medium">Pre-Session Boundary Chat</td>
-                <td class="p-5 border-b border-gray-100 dark:border-gray-800 text-center text-gray-900 dark:text-white font-semibold">10 Mins</td>
-                <td class="p-5 border-b border-gray-100 dark:border-gray-800 text-center text-gray-900 dark:text-white font-semibold bg-mint/5 dark:bg-mint/10">15 Mins</td>
-                <td class="p-5 border-b border-gray-100 dark:border-gray-800 text-center text-gray-900 dark:text-white font-semibold">20 Mins</td>
+                <td class="p-5 border-b border-gray-100 dark:border-gray-800 font-medium align-middle">Pre-Session Boundary Chat</td>
+                <td class="p-5 border-b border-gray-100 dark:border-gray-800 text-center text-gray-900 dark:text-white font-medium align-middle">10 Mins</td>
+                <td class="p-5 border-b border-gray-100 dark:border-gray-800 text-center text-gray-900 dark:text-white font-medium bg-mint/5 dark:bg-mint/10 align-middle">15 Mins</td>
+                <td class="p-5 border-b border-gray-100 dark:border-gray-800 text-center text-gray-900 dark:text-white font-medium align-middle">20 Mins</td>
               </tr>
               <tr class="hover:bg-gray-50 dark:hover:bg-white/5 transition-colors">
-                <td class="p-5 border-b border-gray-100 dark:border-gray-800 font-medium">Basic Cuddling Positions</td>
-                <td class="p-5 border-b border-gray-100 dark:border-gray-800 text-center"><i class="fas fa-check text-mint"></i></td>
-                <td class="p-5 border-b border-gray-100 dark:border-gray-800 text-center bg-mint/5 dark:bg-mint/10"><i class="fas fa-check text-mint"></i></td>
-                <td class="p-5 border-b border-gray-100 dark:border-gray-800 text-center"><i class="fas fa-check text-mint"></i></td>
+                <td class="p-5 border-b border-gray-100 dark:border-gray-800 font-medium align-middle">Basic Cuddling Positions</td>
+                <td class="p-5 border-b border-gray-100 dark:border-gray-800 text-center align-middle"><i class="fas fa-check text-mint"></i></td>
+                <td class="p-5 border-b border-gray-100 dark:border-gray-800 text-center bg-mint/5 dark:bg-mint/10 align-middle"><i class="fas fa-check text-mint"></i></td>
+                <td class="p-5 border-b border-gray-100 dark:border-gray-800 text-center align-middle"><i class="fas fa-check text-mint"></i></td>
               </tr>
               <tr class="hover:bg-gray-50 dark:hover:bg-white/5 transition-colors">
-                <td class="p-5 border-b border-gray-100 dark:border-gray-800 font-medium">Deep Pressure Therapy</td>
-                <td class="p-5 border-b border-gray-100 dark:border-gray-800 text-center opacity-30"><i class="fas fa-minus"></i></td>
-                <td class="p-5 border-b border-gray-100 dark:border-gray-800 text-center bg-mint/5 dark:bg-mint/10"><i class="fas fa-check text-mint"></i></td>
-                <td class="p-5 border-b border-gray-100 dark:border-gray-800 text-center"><i class="fas fa-check text-mint"></i></td>
+                <td class="p-5 border-b border-gray-100 dark:border-gray-800 font-medium align-middle">Deep Pressure Therapy</td>
+                <td class="p-5 border-b border-gray-100 dark:border-gray-800 text-center opacity-30 align-middle"><i class="fas fa-minus"></i></td>
+                <td class="p-5 border-b border-gray-100 dark:border-gray-800 text-center bg-mint/5 dark:bg-mint/10 align-middle"><i class="fas fa-check text-mint"></i></td>
+                <td class="p-5 border-b border-gray-100 dark:border-gray-800 text-center align-middle"><i class="fas fa-check text-mint"></i></td>
               </tr>
               <tr class="hover:bg-gray-50 dark:hover:bg-white/5 transition-colors">
-                <td class="p-5 border-b border-gray-100 dark:border-gray-800 font-medium">Somatic Grounding</td>
-                <td class="p-5 border-b border-gray-100 dark:border-gray-800 text-center opacity-30"><i class="fas fa-minus"></i></td>
-                <td class="p-5 border-b border-gray-100 dark:border-gray-800 text-center bg-mint/5 dark:bg-mint/10"><i class="fas fa-check text-mint"></i></td>
-                <td class="p-5 border-b border-gray-100 dark:border-gray-800 text-center"><i class="fas fa-check text-mint"></i></td>
+                <td class="p-5 border-b border-gray-100 dark:border-gray-800 font-medium align-middle">Somatic Grounding</td>
+                <td class="p-5 border-b border-gray-100 dark:border-gray-800 text-center opacity-30 align-middle"><i class="fas fa-minus"></i></td>
+                <td class="p-5 border-b border-gray-100 dark:border-gray-800 text-center bg-mint/5 dark:bg-mint/10 align-middle"><i class="fas fa-check text-mint"></i></td>
+                <td class="p-5 border-b border-gray-100 dark:border-gray-800 text-center align-middle"><i class="fas fa-check text-mint"></i></td>
               </tr>
               <tr class="hover:bg-gray-50 dark:hover:bg-white/5 transition-colors">
-                <td class="p-5 border-b border-gray-100 dark:border-gray-800 font-medium">Guided Breathing Exercises</td>
-                <td class="p-5 border-b border-gray-100 dark:border-gray-800 text-center opacity-30"><i class="fas fa-minus"></i></td>
-                <td class="p-5 border-b border-gray-100 dark:border-gray-800 text-center bg-mint/5 dark:bg-mint/10 opacity-30"><i class="fas fa-minus"></i></td>
-                <td class="p-5 border-b border-gray-100 dark:border-gray-800 text-center"><i class="fas fa-check text-mint"></i></td>
+                <td class="p-5 border-b border-gray-100 dark:border-gray-800 font-medium align-middle">Guided Breathing Exercises</td>
+                <td class="p-5 border-b border-gray-100 dark:border-gray-800 text-center opacity-30 align-middle"><i class="fas fa-minus"></i></td>
+                <td class="p-5 border-b border-gray-100 dark:border-gray-800 text-center bg-mint/5 dark:bg-mint/10 opacity-30 align-middle"><i class="fas fa-minus"></i></td>
+                <td class="p-5 border-b border-gray-100 dark:border-gray-800 text-center align-middle"><i class="fas fa-check text-mint"></i></td>
               </tr>
               <tr class="hover:bg-gray-50 dark:hover:bg-white/5 transition-colors">
-                <td class="p-5 font-medium">Aftercare Follow-up</td>
-                <td class="p-5 text-center opacity-30"><i class="fas fa-minus"></i></td>
-                <td class="p-5 text-center bg-mint/5 dark:bg-mint/10 opacity-30"><i class="fas fa-minus"></i></td>
-                <td class="p-5 text-center"><i class="fas fa-check text-mint"></i></td>
+                <td class="p-5 font-medium align-middle">Aftercare Follow-up</td>
+                <td class="p-5 text-center opacity-30 align-middle"><i class="fas fa-minus"></i></td>
+                <td class="p-5 text-center bg-mint/5 dark:bg-mint/10 opacity-30 align-middle"><i class="fas fa-minus"></i></td>
+                <td class="p-5 text-center align-middle"><i class="fas fa-check text-mint"></i></td>
               </tr>
             </tbody>
           </table>
@@ -390,8 +394,8 @@
     <section class="py-20 bg-white dark:bg-dark-gray transition-colors duration-300">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
-          <h2 class="text-sm font-bold text-cyan tracking-widest uppercase mb-2">A La Carte</h2>
-          <h3 class="text-3xl font-extrabold text-gray-900 dark:text-white">Session Enhancements</h3>
+          <h2 class="text-sm font-medium text-cyan tracking-widest uppercase mb-2">A La Carte</h2>
+          <h3 class="text-3xl font-semibold text-gray-900 dark:text-white">Session Enhancements</h3>
           <p class="text-gray-600 dark:text-gray-400 mt-2">Customize your experience. Add these to any package at checkout.</p>
         </div>
 
@@ -399,30 +403,30 @@
           
           <div class="bg-gray-50 dark:bg-[#1a1a1a] p-6 rounded-2xl border border-gray-100 dark:border-white/5 text-center hover:border-mint transition-colors duration-300 group">
             <div class="w-12 h-12 mx-auto bg-mint/10 rounded-full flex items-center justify-center mb-4 text-mint group-hover:scale-110 transition-transform"><i class="fas fa-wind"></i></div>
-            <h4 class="font-bold text-gray-900 dark:text-white">Aromatherapy</h4>
+            <h4 class="font-medium text-gray-900 dark:text-white">Aromatherapy</h4>
             <p class="text-sm text-gray-500 mt-2 mb-4">Choice of 5 essential oils</p>
-            <div class="font-bold text-mint text-xl">+$15</div>
+            <div class="font-semibold text-mint text-xl">+$15</div>
           </div>
 
           <div class="bg-gray-50 dark:bg-[#1a1a1a] p-6 rounded-2xl border border-gray-100 dark:border-white/5 text-center hover:border-cyan transition-colors duration-300 group">
             <div class="w-12 h-12 mx-auto bg-cyan/10 rounded-full flex items-center justify-center mb-4 text-cyan group-hover:scale-110 transition-transform"><i class="fas fa-clock"></i></div>
-            <h4 class="font-bold text-gray-900 dark:text-white">Time Extension</h4>
+            <h4 class="font-medium text-gray-900 dark:text-white">Time Extension</h4>
             <p class="text-sm text-gray-500 mt-2 mb-4">Add 30 minutes to session</p>
-            <div class="font-bold text-cyan text-xl">+$45</div>
+            <div class="font-semibold text-cyan text-xl">+$45</div>
           </div>
 
           <div class="bg-gray-50 dark:bg-[#1a1a1a] p-6 rounded-2xl border border-gray-100 dark:border-white/5 text-center hover:border-mint transition-colors duration-300 group">
             <div class="w-12 h-12 mx-auto bg-mint/10 rounded-full flex items-center justify-center mb-4 text-mint group-hover:scale-110 transition-transform"><i class="fas fa-car"></i></div>
-            <h4 class="font-bold text-gray-900 dark:text-white">Out-Call Travel</h4>
+            <h4 class="font-medium text-gray-900 dark:text-white">Out-Call Travel</h4>
             <p class="text-sm text-gray-500 mt-2 mb-4">We come to you (Max 15 miles)</p>
-            <div class="font-bold text-mint text-xl">+$30</div>
+            <div class="font-semibold text-mint text-xl">+$30</div>
           </div>
 
           <div class="bg-gray-50 dark:bg-[#1a1a1a] p-6 rounded-2xl border border-gray-100 dark:border-white/5 text-center hover:border-cyan transition-colors duration-300 group">
             <div class="w-12 h-12 mx-auto bg-cyan/10 rounded-full flex items-center justify-center mb-4 text-cyan group-hover:scale-110 transition-transform"><i class="fas fa-bed"></i></div>
-            <h4 class="font-bold text-gray-900 dark:text-white">Weighted Blanket</h4>
+            <h4 class="font-medium text-gray-900 dark:text-white">Weighted Blanket</h4>
             <p class="text-sm text-gray-500 mt-2 mb-4">15lb or 20lb options</p>
-            <div class="font-bold text-gray-400 text-xl uppercase text-sm mt-1">Included Free</div>
+            <div class="font-semibold text-gray-400 text-xl uppercase text-sm mt-1">Included Free</div>
           </div>
 
         </div>
@@ -435,7 +439,7 @@
           
           <div class="md:w-1/3">
             <i class="fas fa-shield-alt text-5xl text-mint mb-6"></i>
-            <h3 class="text-3xl font-extrabold mb-4">Financial Boundaries & Policies</h3>
+            <h3 class="text-3xl font-semibold mb-4">Financial Boundaries & Policies</h3>
             <p class="text-gray-400 text-sm leading-relaxed mb-6">
               To maintain a safe, professional environment for our therapists and clients, we adhere strictly to our financial and cancellation policies. Please review them carefully before booking.
             </p>
@@ -443,28 +447,28 @@
 
           <div class="md:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-6">
             <div class="bg-white/5 border border-white/10 p-6 rounded-xl">
-              <h4 class="font-bold text-mint mb-2"><i class="fas fa-undo-alt mr-2"></i>Cancellations</h4>
+              <h4 class="font-medium text-mint mb-2"><i class="fas fa-undo-alt mr-2"></i>Cancellations</h4>
               <p class="text-sm text-gray-400 leading-relaxed">
                 Full refunds are issued for cancellations made 48 hours in advance. 50% refund for 24 hours. No-shows or cancellations under 24 hours are charged fully.
               </p>
             </div>
             
             <div class="bg-white/5 border border-white/10 p-6 rounded-xl">
-              <h4 class="font-bold text-cyan mb-2"><i class="fas fa-hand-paper mr-2"></i>Boundary Violations</h4>
+              <h4 class="font-medium text-cyan mb-2"><i class="fas fa-hand-paper mr-2"></i>Boundary Violations</h4>
               <p class="text-sm text-gray-400 leading-relaxed">
                 If a session is terminated early by the therapist due to a client violating the code of conduct (e.g., sexual advancements), no refunds will be issued under any circumstances.
               </p>
             </div>
 
             <div class="bg-white/5 border border-white/10 p-6 rounded-xl">
-              <h4 class="font-bold text-mint mb-2"><i class="fas fa-credit-card mr-2"></i>Payment Methods</h4>
+              <h4 class="font-medium text-mint mb-2"><i class="fas fa-credit-card mr-2"></i>Payment Methods</h4>
               <p class="text-sm text-gray-400 leading-relaxed">
                 We accept all major credit cards, PayPal, and Apple Pay. Payments must be completed online prior to the session. We do not accept cash on arrival.
               </p>
             </div>
 
             <div class="bg-white/5 border border-white/10 p-6 rounded-xl">
-              <h4 class="font-bold text-cyan mb-2"><i class="fas fa-clock mr-2"></i>Late Arrivals</h4>
+              <h4 class="font-medium text-cyan mb-2"><i class="fas fa-clock mr-2"></i>Late Arrivals</h4>
               <p class="text-sm text-gray-400 leading-relaxed">
                 If you arrive late, your session will still end at the scheduled time to respect the next client. The full fee applies regardless of the shortened duration.
               </p>
@@ -477,13 +481,14 @@
 
   </main>
 
-  <footer class="bg-dark-gray text-white pt-20 pb-10 mt-auto border-t-4 border-mint">
+  <!-- Modified: Removed border-t-4 border-mint from the footer -->
+  <footer class="bg-dark-gray text-white pt-20 pb-10 mt-auto">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
         
         <div>
-          <h3 class="text-2xl font-bold mb-4">Thera<span class="text-transparent bg-clip-text bg-gradient-to-r from-mint to-cyan">Touch</span></h3>
+          <h3 class="text-2xl font-semibold mb-4">Thera<span class="text-transparent bg-clip-text bg-gradient-to-r from-mint to-cyan">Touch</span></h3>
           <p class="text-gray-400 mb-6 leading-relaxed">
             Empowering you to feel connected, relaxed, and comforted through professional cuddling and ethical therapeutic touch services.
           </p>
@@ -504,7 +509,7 @@
         </div>
 
         <div>
-          <h4 class="text-xl font-bold mb-6 text-white">Quick Links</h4>
+          <h4 class="text-xl font-medium mb-6 text-white">Quick Links</h4>
           <ul class="space-y-3">
             <li><a href="index.html" class="text-gray-400 hover:text-mint transition-colors duration-300">Home</a></li>
             <li><a href="about.html" class="text-gray-400 hover:text-mint transition-colors duration-300">About Us</a></li>
@@ -515,7 +520,7 @@
         </div>
 
         <div>
-          <h4 class="text-xl font-bold mb-6 text-white">Our Services</h4>
+          <h4 class="text-xl font-medium mb-6 text-white">Our Services</h4>
           <ul class="space-y-3">
             <li><a href="services.html" class="text-gray-400 hover:text-mint transition-colors duration-300">Cuddle Therapy</a></li>
             <li><a href="services.html" class="text-gray-400 hover:text-mint transition-colors duration-300">Platonic Touch</a></li>
@@ -526,7 +531,7 @@
         </div>
 
         <div>
-          <h4 class="text-xl font-bold mb-6 text-white">Contact Us</h4>
+          <h4 class="text-xl font-medium mb-6 text-white">Contact Us</h4>
           <ul class="space-y-4">
             <li class="flex items-start gap-3">
               <i class="fas fa-map-marker-alt text-mint mt-1"></i>

@@ -40,7 +40,7 @@
         <div class="flex-shrink-0">
           <a href="index.html" class="flex items-center space-x-3">
             <div class="flex flex-col">
-              <span class="text-2xl font-bold text-dark-gray dark:text-white nav-logo-text">Thera<span class="text-transparent bg-clip-text bg-gradient-to-r from-mint to-cyan">Touch</span></span>
+              <span class="text-2xl font-semibold text-dark-gray dark:text-white nav-logo-text">Thera<span class="text-transparent bg-clip-text bg-gradient-to-r from-mint to-cyan">Touch</span></span>
             </div>
           </a>
         </div>
@@ -86,12 +86,9 @@
         </div>
 
         <div class="hidden xl:flex items-center space-x-2">
-          <a href="login.html" class="nav-button text-gray-700 dark:text-gray-200 hover:text-mint px-3 py-2 rounded-lg font-medium transition duration-300 text-sm flex items-center space-x-1">
-            <span>Login</span>
-          </a>
-          <a href="register.html" class="nav-button bg-gradient-to-r from-mint to-cyan hover:opacity-90 text-white dark:text-dark-gray px-5 py-2.5 rounded-full font-bold transition duration-300 text-sm flex items-center space-x-2 shadow-md whitespace-nowrap">
-            <i class="fas fa-user-plus"></i>
-            <span>Register</span>
+          <!-- Styled Login as secondary CTA without an icon -->
+          <a href="login.html" class="nav-button border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-200 hover:border-mint dark:hover:border-mint hover:text-mint dark:hover:text-mint px-5 py-2.5 rounded-full font-semibold transition duration-300 text-sm flex items-center whitespace-nowrap">
+            Login
           </a>
 
           <button id="rtl-toggle" class="nav-icon-button w-10 h-10 rounded-full bg-gray-100 dark:bg-white/10 hover:bg-gray-200 dark:hover:bg-white/20 flex items-center justify-center text-gray-700 dark:text-white transition duration-300 ml-2 text-xs font-semibold" title="Toggle RTL">
@@ -154,12 +151,9 @@
         </div>
 
         <div class="pt-4 border-t border-gray-200 dark:border-white/10 mt-3 space-y-3">
-          <div class="grid grid-cols-2 gap-3">
-            <a href="login.html" class="block w-full bg-gray-100 dark:bg-white/5 hover:bg-gray-200 dark:hover:bg-white/10 text-gray-800 dark:text-white px-4 py-3 rounded-lg font-medium text-center transition duration-300 text-sm">
+          <div class="grid grid-cols-1 gap-3">
+            <a href="login.html" class="block w-full border border-gray-300 dark:border-gray-600 hover:border-mint dark:hover:border-mint text-gray-800 dark:text-white px-4 py-3 rounded-lg font-medium text-center transition duration-300 text-sm">
               Login
-            </a>
-            <a href="register.html" class="block w-full bg-gradient-to-r from-mint to-cyan hover:opacity-90 text-white dark:text-dark-gray px-4 py-3 rounded-lg font-bold text-center transition duration-300 shadow-md text-sm">
-              Register
             </a>
           </div>
 
@@ -185,7 +179,7 @@
       <div class="absolute bottom-0 left-0 w-80 h-80 bg-cyan/20 rounded-full blur-3xl z-0"></div>
       
       <div class="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center animate-fade-in text-white">
-        <h1 class="text-4xl md:text-5xl lg:text-7xl font-bold mb-6">Get in <span class="text-transparent bg-clip-text bg-gradient-to-r from-mint to-cyan">Touch</span></h1>
+        <h1 class="text-4xl md:text-5xl lg:text-7xl font-semibold mb-6">Get in <span class="text-transparent bg-clip-text bg-gradient-to-r from-mint to-cyan">Touch</span></h1>
         <p class="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto">Have a question or ready to book your session? We'd love to hear from you. Scroll down to see how you can reach us.</p>
         <div class="mt-12 animate-bounce flex justify-center">
           <i class="fas fa-chevron-down text-3xl text-mint/70"></i>
@@ -198,7 +192,7 @@
         <div class="grid lg:grid-cols-2 gap-16 items-start">
           
           <div class="bg-gray-50 dark:bg-[#222] p-8 md:p-10 rounded-3xl shadow-sm border border-gray-100 dark:border-white/5 animate-fade-in">
-            <h3 class="text-2xl font-bold text-dark-gray dark:text-white mb-6">Send us a Message</h3>
+            <h3 class="text-2xl font-semibold text-dark-gray dark:text-white mb-6">Send us a Message</h3>
             <form action="#" method="POST" class="space-y-6">
               <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
@@ -231,7 +225,7 @@
                 <textarea id="message" rows="5" class="w-full bg-white dark:bg-[#1a1a1a] border border-gray-200 dark:border-gray-700 text-gray-900 dark:text-white rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-mint focus:border-transparent transition duration-300 resize-none" placeholder="How can we help you today?"></textarea>
               </div>
 
-              <button type="submit" class="w-full bg-gradient-to-r from-mint to-cyan hover:opacity-90 text-white font-bold py-4 rounded-xl transition duration-300 shadow-lg hover:shadow-mint/30 flex justify-center items-center">
+              <button type="submit" class="w-full bg-gradient-to-r from-mint to-cyan hover:opacity-90 text-white font-semibold py-4 rounded-xl transition duration-300 shadow-lg hover:shadow-mint/30 flex justify-center items-center">
                 <span>Send Message</span>
                 <i class="fas fa-paper-plane ml-2"></i>
               </button>
@@ -240,7 +234,7 @@
 
           <div class="space-y-10 animate-fade-in" style="animation-delay: 0.2s;">
             <div>
-              <h2 class="text-3xl font-bold text-dark-gray dark:text-white mb-6">Contact Information</h2>
+              <h2 class="text-3xl font-semibold text-dark-gray dark:text-white mb-6">Contact Information</h2>
               <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-8">
                 Our compassionate team is here to answer any questions you may have about our services, safety protocols, or booking process. Reach out to us through any of the channels below.
               </p>
@@ -252,7 +246,7 @@
                   <i class="fas fa-map-marker-alt"></i>
                 </div>
                 <div>
-                  <h4 class="text-lg font-bold text-dark-gray dark:text-white mb-1">Our Location</h4>
+                  <h4 class="text-lg font-medium text-dark-gray dark:text-white mb-1">Our Location</h4>
                   <p class="text-gray-600 dark:text-gray-400">123 Wellness Street<br>Salem, Tamil Nadu, 636001<br>India</p>
                 </div>
               </div>
@@ -262,7 +256,7 @@
                   <i class="fas fa-phone-alt"></i>
                 </div>
                 <div>
-                  <h4 class="text-lg font-bold text-dark-gray dark:text-white mb-1">Phone Number</h4>
+                  <h4 class="text-lg font-medium text-dark-gray dark:text-white mb-1">Phone Number</h4>
                   <a href="tel:+919876543210" class="text-gray-600 dark:text-gray-400 hover:text-mint transition duration-300">+91 98765 43210</a>
                   <p class="text-sm text-gray-500 mt-1">Available during working hours</p>
                 </div>
@@ -273,7 +267,7 @@
                   <i class="fas fa-envelope"></i>
                 </div>
                 <div>
-                  <h4 class="text-lg font-bold text-dark-gray dark:text-white mb-1">Email Address</h4>
+                  <h4 class="text-lg font-medium text-dark-gray dark:text-white mb-1">Email Address</h4>
                   <a href="mailto:info@theratouch.com" class="text-gray-600 dark:text-gray-400 hover:text-mint transition duration-300">info@theratouch.com</a>
                   <p class="text-sm text-gray-500 mt-1">We aim to reply within 24 hours</p>
                 </div>
@@ -284,7 +278,7 @@
                   <i class="fas fa-clock"></i>
                 </div>
                 <div>
-                  <h4 class="text-lg font-bold text-dark-gray dark:text-white mb-1">Working Hours</h4>
+                  <h4 class="text-lg font-medium text-dark-gray dark:text-white mb-1">Working Hours</h4>
                   <p class="text-gray-600 dark:text-gray-400">Monday - Saturday: 9:00 AM - 8:00 PM</p>
                   <p class="text-gray-600 dark:text-gray-400">Sunday: Closed (By special appointment only)</p>
                 </div>
@@ -292,7 +286,7 @@
             </div>
 
             <div class="pt-6 border-t border-gray-200 dark:border-gray-800">
-              <h4 class="text-lg font-bold text-dark-gray dark:text-white mb-4">Follow Our Journey</h4>
+              <h4 class="text-lg font-medium text-dark-gray dark:text-white mb-4">Follow Our Journey</h4>
               <div class="flex space-x-4">
                 <a href="#" class="w-12 h-12 bg-gray-100 dark:bg-[#222] text-gray-600 dark:text-gray-400 hover:bg-mint hover:text-white dark:hover:bg-mint dark:hover:text-white rounded-full flex items-center justify-center transition-all duration-300">
                   <i class="fab fa-facebook-f text-lg"></i>
@@ -311,7 +305,7 @@
 
         <div class="mt-20 animate-fade-in" style="animation-delay: 0.4s;">
           <div class="text-center mb-10">
-            <h2 class="text-3xl font-bold text-dark-gray dark:text-white mb-4">Find Us on the Map</h2>
+            <h2 class="text-3xl font-semibold text-dark-gray dark:text-white mb-4">Find Us on the Map</h2>
             <p class="text-gray-600 dark:text-gray-400">Visit our serene sanctuary located in the heart of Salem.</p>
           </div>
           <div class="w-full h-[400px] md:h-[500px] rounded-3xl overflow-hidden shadow-xl border-4 border-white dark:border-[#222] relative z-10 bg-gray-200 dark:bg-gray-800">
@@ -333,13 +327,14 @@
 
   </main>
 
-  <footer class="bg-dark-gray text-white pt-20 pb-10 mt-auto border-t-4 border-mint">
+  <!-- Modified: Removed border-t-4 border-mint from the footer -->
+  <footer class="bg-dark-gray text-white pt-20 pb-10 mt-auto">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
         
         <div>
-          <h3 class="text-2xl font-bold mb-4">Thera<span class="text-transparent bg-clip-text bg-gradient-to-r from-mint to-cyan">Touch</span></h3>
+          <h3 class="text-2xl font-semibold mb-4">Thera<span class="text-transparent bg-clip-text bg-gradient-to-r from-mint to-cyan">Touch</span></h3>
           <p class="text-gray-400 mb-6 leading-relaxed">
             Empowering you to feel connected, relaxed, and comforted through professional cuddling and ethical therapeutic touch services.
           </p>
@@ -360,7 +355,7 @@
         </div>
 
         <div>
-          <h4 class="text-xl font-bold mb-6 text-white">Quick Links</h4>
+          <h4 class="text-xl font-medium mb-6 text-white">Quick Links</h4>
           <ul class="space-y-3">
             <li><a href="index.html" class="text-gray-400 hover:text-mint transition-colors duration-300">Home</a></li>
             <li><a href="about.html" class="text-gray-400 hover:text-mint transition-colors duration-300">About Us</a></li>
@@ -371,7 +366,7 @@
         </div>
 
         <div>
-          <h4 class="text-xl font-bold mb-6 text-white">Our Services</h4>
+          <h4 class="text-xl font-medium mb-6 text-white">Our Services</h4>
           <ul class="space-y-3">
             <li><a href="services.html" class="text-gray-400 hover:text-mint transition-colors duration-300">Cuddle Therapy</a></li>
             <li><a href="services.html" class="text-gray-400 hover:text-mint transition-colors duration-300">Platonic Touch</a></li>
@@ -382,7 +377,7 @@
         </div>
 
         <div>
-          <h4 class="text-xl font-bold mb-6 text-white">Contact Us</h4>
+          <h4 class="text-xl font-medium mb-6 text-white">Contact Us</h4>
           <ul class="space-y-4">
             <li class="flex items-start gap-3">
               <i class="fas fa-map-marker-alt text-mint mt-1"></i>
