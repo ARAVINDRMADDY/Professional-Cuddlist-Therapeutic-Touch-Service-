@@ -97,17 +97,6 @@
           <span class="font-medium">Message Therapist</span>
         </a>
       </nav>
-
-      <div class="p-4 border-t border-mint/20 bg-black/20">
-        <div class="flex items-center space-x-3 rtl:space-x-reverse p-2 rounded-xl hover:bg-white/5 transition-colors cursor-pointer">
-          <img src="https://ui-avatars.com/api/?name=Emily+Blunt&background=059669&color=fff" alt="User" class="w-9 h-9 rounded-full border border-mint">
-          <div class="overflow-hidden">
-            <p class="text-sm font-semibold text-white truncate">Emily Blunt</p>
-            <p class="text-xs text-gray-400 truncate">Client #TT-2026</p>
-          </div>
-          <i class="fas fa-chevron-right ltr:ml-auto rtl:mr-auto text-xs text-gray-500"></i>
-        </div>
-      </div>
     </aside>
 
     <div class="flex-1 flex flex-col lg:ml-64 min-w-0 transition-all duration-300">
@@ -121,18 +110,19 @@
           <h2 id="page-title" class="text-lg md:text-xl font-bold text-gray-800 dark:text-white truncate">Welcome back,</h2>
         </div>
 
-        <div class="flex items-center gap-2 md:gap-4">
+        <div class="flex items-center gap-4">
           
-          <button id="rtl-toggle" class="w-9 h-9 md:w-10 md:h-10 rounded-full bg-gray-100 dark:bg-[#1a1a1a] hover:bg-gray-200 dark:hover:bg-gray-800 flex items-center justify-center text-gray-600 dark:text-gray-300 transition-all focus:outline-none font-bold text-xs" title="Toggle RTL/LTR">
-            <span id="rtl-text">RTL</span>
-          </button>
+          <!-- Profile Icon moved to Top Right -->
+          <div class="flex items-center space-x-3 rtl:space-x-reverse cursor-pointer hover:opacity-80 transition-opacity">
+            <img src="https://ui-avatars.com/api/?name=Emily+Blunt&background=059669&color=fff" alt="User" class="w-9 h-9 md:w-10 md:h-10 rounded-full border-2 border-mint object-cover">
+            <div class="hidden sm:block text-left rtl:text-right">
+              <p class="text-sm font-bold text-gray-800 dark:text-white leading-tight">Emily Blunt</p>
+              <p class="text-xs text-gray-500 dark:text-gray-400">Client #TT-2026</p>
+            </div>
+            <i class="fas fa-chevron-down text-xs text-gray-400 hidden sm:block pl-1"></i>
+          </div>
 
-          <button id="theme-toggle" class="w-9 h-9 md:w-10 md:h-10 rounded-full bg-gray-100 dark:bg-[#1a1a1a] hover:bg-gray-200 dark:hover:bg-gray-800 flex items-center justify-center text-gray-600 dark:text-mint transition-all focus:outline-none">
-            <i class="fas fa-moon dark:hidden text-sm md:text-base"></i>
-            <i class="fas fa-sun hidden dark:inline text-sm md:text-base"></i>
-          </button>
-
-          <a href="login.html" class="flex items-center gap-2 text-gray-600 dark:text-gray-300 hover:text-mint dark:hover:text-mint transition-colors text-sm font-medium ltr:ml-2 rtl:mr-2">
+          <a href="login.html" class="flex items-center gap-2 text-gray-600 dark:text-gray-300 hover:text-mint dark:hover:text-mint transition-colors text-sm font-medium border-l border-gray-200 dark:border-gray-700 rtl:border-l-0 rtl:border-r pl-4 rtl:pl-0 rtl:pr-4">
             <i class="fas fa-sign-out-alt text-lg"></i>
             <span class="hidden sm:inline">Logout</span>
           </a>
@@ -471,44 +461,47 @@
 
     // --- RTL/LTR Toggle Logic ---
     const rtlToggle = document.getElementById('rtl-toggle');
-    const rtlText = document.getElementById('rtl-text');
     const html = document.documentElement;
     const mainContent = document.querySelector('.flex-1.lg\\:ml-64');
 
     // Initialize RTL from localStorage
     if (localStorage.getItem('direction') === 'rtl') {
       html.setAttribute('dir', 'rtl');
-      rtlText.textContent = 'LTR';
       if (mainContent) {
         mainContent.classList.remove('lg:ml-64');
         mainContent.classList.add('lg:mr-64');
       }
     } else {
       html.setAttribute('dir', 'ltr');
-      rtlText.textContent = 'RTL';
     }
 
-    rtlToggle.addEventListener('click', () => {
-      const currentDir = html.getAttribute('dir');
+    if (rtlToggle) {
+      const rtlText = document.getElementById('rtl-text');
+      if(rtlText && html.getAttribute('dir') === 'rtl') rtlText.textContent = 'LTR';
+      if(rtlText && html.getAttribute('dir') === 'ltr') rtlText.textContent = 'RTL';
       
-      if (currentDir === 'ltr') {
-        html.setAttribute('dir', 'rtl');
-        localStorage.setItem('direction', 'rtl');
-        rtlText.textContent = 'LTR';
-        if (mainContent) {
-          mainContent.classList.remove('lg:ml-64');
-          mainContent.classList.add('lg:mr-64');
+      rtlToggle.addEventListener('click', () => {
+        const currentDir = html.getAttribute('dir');
+        
+        if (currentDir === 'ltr') {
+          html.setAttribute('dir', 'rtl');
+          localStorage.setItem('direction', 'rtl');
+          if(rtlText) rtlText.textContent = 'LTR';
+          if (mainContent) {
+            mainContent.classList.remove('lg:ml-64');
+            mainContent.classList.add('lg:mr-64');
+          }
+        } else {
+          html.setAttribute('dir', 'ltr');
+          localStorage.setItem('direction', 'ltr');
+          if(rtlText) rtlText.textContent = 'RTL';
+          if (mainContent) {
+            mainContent.classList.remove('lg:mr-64');
+            mainContent.classList.add('lg:ml-64');
+          }
         }
-      } else {
-        html.setAttribute('dir', 'ltr');
-        localStorage.setItem('direction', 'ltr');
-        rtlText.textContent = 'RTL';
-        if (mainContent) {
-          mainContent.classList.remove('lg:mr-64');
-          mainContent.classList.add('lg:ml-64');
-        }
-      }
-    });
+      });
+    }
 
     // --- Responsive Sidebar Logic ---
     const sidebar = document.getElementById('sidebar');
@@ -541,16 +534,18 @@
       html.classList.remove('dark');
     }
 
-    themeToggle.addEventListener('click', () => {
-      html.classList.toggle('dark');
-      if (html.classList.contains('dark')) {
-        localStorage.setItem('theme', 'dark');
-        updateCharts(true);
-      } else {
-        localStorage.setItem('theme', 'light');
-        updateCharts(false);
-      }
-    });
+    if (themeToggle) {
+      themeToggle.addEventListener('click', () => {
+        html.classList.toggle('dark');
+        if (html.classList.contains('dark')) {
+          localStorage.setItem('theme', 'dark');
+          updateCharts(true);
+        } else {
+          localStorage.setItem('theme', 'light');
+          updateCharts(false);
+        }
+      });
+    }
 
     // --- Chart.js Configuration for USER Dashboard ---
     let budgetChart;
