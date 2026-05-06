@@ -15,7 +15,7 @@
       theme: {
         extend: {
           colors: {
-            mint: '#059669', /* Darkened to a rich emerald-mint for clear visibility on white */
+            mint: '#059669', 
             cyan: '#22D3EE',
             'dark-gray': '#333333',
             white: '#FFFFFF'
@@ -48,7 +48,8 @@
       <div class="flex justify-between items-center h-20">
 
         <div class="flex-shrink-0">
-          <a href="index.html" class="flex items-center space-x-3">
+          <!-- Changed space-x-3 to gap-3 -->
+          <a href="index.html" class="flex items-center gap-3">
             <div class="flex flex-col">
               <span class="text-2xl font-semibold text-dark-gray dark:text-white nav-logo-text">Thera<span class="text-transparent bg-clip-text bg-gradient-to-r from-mint to-cyan">Touch</span></span>
             </div>
@@ -56,14 +57,17 @@
         </div>
 
         <div class="hidden xl:flex items-center justify-center flex-1 nav-menu-container mx-4">
-          <div class="flex items-center space-x-0.5 lg:space-x-2">
+          <!-- Changed space-x to gap -->
+          <div class="flex items-center gap-0.5 lg:gap-2">
 
             <div class="relative group">
-              <button class="nav-link text-gray-700 dark:text-gray-200 hover:text-mint dark:hover:text-mint font-medium transition duration-300 flex items-center space-x-1 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-white/5">
+              <!-- Changed space-x-1 to gap-1 -->
+              <button class="nav-link text-gray-700 dark:text-gray-200 hover:text-mint dark:hover:text-mint font-medium transition duration-300 flex items-center gap-1 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-white/5">
                 <span class="text-sm">Home</span>
                 <i class="fas fa-chevron-down text-xs"></i>
               </button>
-              <div class="absolute left-0 mt-2 w-48 bg-white dark:bg-[#222] border border-gray-100 dark:border-gray-700 rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform group-hover:translate-y-0 translate-y-2 z-50 overflow-hidden">
+              <!-- Added rtl:left-auto rtl:right-0 -->
+              <div class="absolute left-0 rtl:left-auto rtl:right-0 mt-2 w-48 bg-white dark:bg-[#222] border border-gray-100 dark:border-gray-700 rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform group-hover:translate-y-0 translate-y-2 z-50 overflow-hidden">
                 <a href="index.html" class="block px-4 py-3 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-white/5 hover:text-mint transition duration-300">Home Page 1</a>
                 <a href="home-2.html" class="block px-4 py-3 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-white/5 hover:text-mint transition duration-300">Home Page 2</a>
               </div>
@@ -78,16 +82,20 @@
             <a href="contact.html" class="nav-link text-gray-700 dark:text-gray-200 hover:text-mint dark:hover:text-mint font-medium transition duration-300 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-white/5 text-sm">Contact</a>
 
             <div class="relative group">
-              <button class="nav-link text-gray-700 dark:text-gray-200 hover:text-mint dark:hover:text-mint font-medium transition duration-300 flex items-center space-x-1 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-white/5">
+              <!-- Changed space-x-1 to gap-1 -->
+              <button class="nav-link text-gray-700 dark:text-gray-200 hover:text-mint dark:hover:text-mint font-medium transition duration-300 flex items-center gap-1 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-white/5">
                 <span class="text-sm">Dashboard</span>
                 <i class="fas fa-chevron-down text-xs"></i>
               </button>
-              <div class="absolute right-0 mt-2 w-56 bg-white dark:bg-[#222] border border-gray-100 dark:border-gray-700 rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform group-hover:translate-y-0 translate-y-2 z-50 overflow-hidden">
+              <!-- Added rtl:right-auto rtl:left-0 -->
+              <div class="absolute right-0 rtl:right-auto rtl:left-0 mt-2 w-56 bg-white dark:bg-[#222] border border-gray-100 dark:border-gray-700 rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform group-hover:translate-y-0 translate-y-2 z-50 overflow-hidden">
                 <a href="admin-dashboard.html" class="block px-4 py-3 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-white/5 hover:text-mint transition duration-300">
-                  <i class="fas fa-user-shield mr-2"></i>Admin Dashboard
+                  <!-- Changed mr-2 to me-2 -->
+                  <i class="fas fa-user-shield me-2"></i>Admin Dashboard
                 </a>
                 <a href="user-dashboard.html" class="block px-4 py-3 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-white/5 hover:text-mint transition duration-300">
-                  <i class="fas fa-user mr-2"></i>User Dashboard
+                  <!-- Changed mr-2 to me-2 -->
+                  <i class="fas fa-user me-2"></i>User Dashboard
                 </a>
               </div>
             </div>
@@ -95,17 +103,20 @@
           </div>
         </div>
 
-        <div class="hidden xl:flex items-center space-x-2">
+        <!-- Changed space-x-2 to gap-2 -->
+        <div class="hidden xl:flex items-center gap-2">
           <!-- Styled Login as secondary CTA without an icon -->
           <a href="login.html" class="nav-button border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-200 hover:border-mint dark:hover:border-mint hover:text-mint dark:hover:text-mint px-5 py-2.5 rounded-full font-semibold transition duration-300 text-sm flex items-center whitespace-nowrap">
             Login
           </a>
 
-          <button id="rtl-toggle" class="nav-icon-button w-10 h-10 rounded-full bg-gray-100 dark:bg-white/10 hover:bg-gray-200 dark:hover:bg-white/20 flex items-center justify-center text-gray-700 dark:text-white transition duration-300 ml-2 text-xs font-semibold" title="Toggle RTL">
+          <!-- Changed ml-2 to ms-2 -->
+          <button id="rtl-toggle" class="nav-icon-button w-10 h-10 rounded-full bg-gray-100 dark:bg-white/10 hover:bg-gray-200 dark:hover:bg-white/20 flex items-center justify-center text-gray-700 dark:text-white transition duration-300 ms-2 text-xs font-semibold" title="Toggle RTL">
             RTL
           </button>
 
-          <button id="theme-toggle" class="nav-icon-button w-10 h-10 rounded-full bg-gray-100 dark:bg-white/10 hover:bg-gray-200 dark:hover:bg-white/20 flex items-center justify-center text-gray-700 dark:text-white transition duration-300 ml-2" title="Toggle Theme">
+          <!-- Changed ml-2 to ms-2 -->
+          <button id="theme-toggle" class="nav-icon-button w-10 h-10 rounded-full bg-gray-100 dark:bg-white/10 hover:bg-gray-200 dark:hover:bg-white/20 flex items-center justify-center text-gray-700 dark:text-white transition duration-300 ms-2" title="Toggle Theme">
             <i class="fas fa-moon dark:hidden text-sm"></i>
             <i class="fas fa-sun hidden dark:inline text-sm"></i>
           </button>
@@ -131,7 +142,8 @@
             <span class="text-sm font-medium">Home</span>
             <i class="fas fa-chevron-down text-xs transition-transform duration-300" id="mobile-home-icon"></i>
           </button>
-          <div id="mobile-home-menu" class="hidden pl-4 mt-1 space-y-1">
+          <!-- Changed pl-4 to ps-4 -->
+          <div id="mobile-home-menu" class="hidden ps-4 mt-1 space-y-1">
             <a href="index.html" class="block px-4 py-2 text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-white/5 hover:text-mint rounded-lg transition duration-300 text-sm">Home Page 1</a>
             <a href="home-2.html" class="block px-4 py-2 text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-white/5 hover:text-mint rounded-lg transition duration-300 text-sm">Home Page 2</a>
           </div>
@@ -149,12 +161,15 @@
             <span class="text-sm font-medium">Dashboard</span>
             <i class="fas fa-chevron-down text-xs transition-transform duration-300" id="mobile-dashboard-icon"></i>
           </button>
-          <div id="mobile-dashboard-menu" class="hidden pl-4 mt-1 space-y-1">
+          <!-- Changed pl-4 to ps-4 -->
+          <div id="mobile-dashboard-menu" class="hidden ps-4 mt-1 space-y-1">
             <a href="admin-dashboard.html" class="block px-4 py-2 text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-white/5 hover:text-mint rounded-lg transition duration-300 text-sm">
-              <i class="fas fa-user-shield mr-2"></i>Admin Dashboard
+              <!-- Changed mr-2 to me-2 -->
+              <i class="fas fa-user-shield me-2"></i>Admin Dashboard
             </a>
             <a href="user-dashboard.html" class="block px-4 py-2 text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-white/5 hover:text-mint rounded-lg transition duration-300 text-sm">
-              <i class="fas fa-user mr-2"></i>User Dashboard
+              <!-- Changed mr-2 to me-2 -->
+              <i class="fas fa-user me-2"></i>User Dashboard
             </a>
           </div>
         </div>
@@ -168,11 +183,13 @@
 
           <div class="grid grid-cols-2 gap-3 mt-2">
             <button id="mobile-rtl-toggle" class="bg-gray-100 dark:bg-white/5 hover:bg-gray-200 dark:hover:bg-white/10 text-gray-800 dark:text-white px-4 py-3 rounded-lg font-medium text-center transition duration-300 text-sm">
-              <i class="fas fa-language mr-2"></i>RTL
+              <!-- Changed mr-2 to me-2 -->
+              <i class="fas fa-language me-2"></i>RTL
             </button>
             <button id="mobile-theme-toggle" class="bg-gray-100 dark:bg-white/5 hover:bg-gray-200 dark:hover:bg-white/10 text-gray-800 dark:text-white px-4 py-3 rounded-lg font-medium text-center transition duration-300 text-sm">
-              <i class="fas fa-moon mr-2 dark:hidden"></i>
-              <i class="fas fa-sun mr-2 hidden dark:inline"></i>
+              <!-- Changed mr-2 to me-2 -->
+              <i class="fas fa-moon me-2 dark:hidden"></i>
+              <i class="fas fa-sun me-2 hidden dark:inline"></i>
               <span>Theme</span>
             </button>
           </div>
@@ -188,8 +205,9 @@
          <img src="image\pexels-dashamak-10894308.jpg" alt="TheraTouch Background" class="w-full h-full object-cover">
          <div class="absolute inset-0 bg-dark-gray/70"></div> </div>
       
-      <div class="absolute top-0 right-0 w-64 h-64 bg-mint/20 rounded-full blur-3xl z-0"></div>
-      <div class="absolute bottom-0 left-0 w-80 h-80 bg-cyan/20 rounded-full blur-3xl z-0"></div>
+      <!-- Used end/start logic for decorative blobs -->
+      <div class="absolute top-0 end-0 w-64 h-64 bg-mint/20 rounded-full blur-3xl z-0"></div>
+      <div class="absolute bottom-0 start-0 w-80 h-80 bg-cyan/20 rounded-full blur-3xl z-0"></div>
       
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center animate-fade-in flex flex-col items-center justify-center w-full h-full">
         <h1 class="text-4xl md:text-6xl lg:text-7xl font-semibold mb-6 text-white">
@@ -201,13 +219,15 @@
       </div>
     </section>
 
-    <!-- Stats Section Moved Here -->
+    <!-- Stats Section -->
     <section class="py-16 bg-gradient-to-r from-mint to-cyan text-white relative overflow-hidden">
-      <div class="absolute top-0 right-0 w-64 h-64 bg-white/20 rounded-full blur-3xl -mr-20 -mt-20"></div>
-      <div class="absolute bottom-0 left-0 w-64 h-64 bg-dark-gray/10 rounded-full blur-3xl -ml-20 -mb-20"></div>
+      <!-- Changed top-right/bottom-left and margins to logical properties -->
+      <div class="absolute top-0 end-0 w-64 h-64 bg-white/20 rounded-full blur-3xl -me-20 -mt-20"></div>
+      <div class="absolute bottom-0 start-0 w-64 h-64 bg-dark-gray/10 rounded-full blur-3xl -ms-20 -mb-20"></div>
       
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-white/30">
+        <!-- Added rtl:divide-x-reverse to ensure border flips correctly -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x rtl:divide-x-reverse divide-white/30">
           
           <div class="p-4">
             <div class="text-4xl md:text-5xl font-semibold text-dark-gray mb-2">12+</div>
@@ -224,7 +244,8 @@
             <div class="text-sm md:text-base font-medium tracking-wider uppercase text-dark-gray/80">Expert Therapists</div>
           </div>
           
-          <div class="p-4 border-r-0">
+          <!-- Changed border-r-0 to border-e-0 -->
+          <div class="p-4 border-e-0">
             <div class="text-4xl md:text-5xl font-semibold text-dark-gray mb-2">99%</div>
             <div class="text-sm md:text-base font-medium tracking-wider uppercase text-dark-gray/80">Client Relief</div>
           </div>
@@ -419,7 +440,6 @@
 
   </main>
 
-  <!-- Modified: Removed border-t-4 border-mint from the footer -->
   <footer class="bg-dark-gray text-white pt-20 pb-10 mt-auto">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       

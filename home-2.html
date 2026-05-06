@@ -48,7 +48,8 @@
       <div class="flex justify-between items-center h-20">
 
         <div class="flex-shrink-0">
-          <a href="index.html" class="flex items-center space-x-3">
+          <!-- Changed space-x-3 to gap-3 for proper RTL flipping -->
+          <a href="index.html" class="flex items-center gap-3">
             <div class="flex flex-col">
               <span class="text-2xl font-semibold text-dark-gray dark:text-white nav-logo-text">Thera<span class="text-transparent bg-clip-text bg-gradient-to-r from-mint to-cyan">Touch</span></span>
             </div>
@@ -56,14 +57,16 @@
         </div>
 
         <div class="hidden xl:flex items-center justify-center flex-1 nav-menu-container mx-4">
-          <div class="flex items-center space-x-0.5 lg:space-x-2">
+          <!-- Changed space-x to gap for robust RTL spacing -->
+          <div class="flex items-center gap-0.5 lg:gap-2">
 
             <div class="relative group">
-              <button class="nav-link text-mint font-medium transition duration-300 flex items-center space-x-1 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-white/5">
+              <!-- Changed space-x-1 to gap-1 -->
+              <button class="nav-link text-mint font-medium transition duration-300 flex items-center gap-1 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-white/5">
                 <span class="text-sm">Home</span>
                 <i class="fas fa-chevron-down text-xs"></i>
               </button>
-              <div class="absolute left-0 mt-2 w-48 bg-white dark:bg-[#222] border border-gray-100 dark:border-gray-700 rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform group-hover:translate-y-0 translate-y-2 z-50 overflow-hidden">
+              <div class="absolute left-0 rtl:left-auto rtl:right-0 mt-2 w-48 bg-white dark:bg-[#222] border border-gray-100 dark:border-gray-700 rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform group-hover:translate-y-0 translate-y-2 z-50 overflow-hidden">
                 <a href="index.html" class="block px-4 py-3 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-white/5 hover:text-mint transition duration-300">Home Page 1</a>
                 <a href="home-2.html" class="block px-4 py-3 text-mint bg-gray-50 dark:bg-white/5 transition duration-300">Home Page 2</a>
               </div>
@@ -77,16 +80,18 @@
             <a href="contact.html" class="nav-link text-gray-700 dark:text-gray-200 hover:text-mint dark:hover:text-mint font-medium transition duration-300 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-white/5 text-sm">Contact</a>
 
             <div class="relative group">
-              <button class="nav-link text-gray-700 dark:text-gray-200 hover:text-mint dark:hover:text-mint font-medium transition duration-300 flex items-center space-x-1 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-white/5">
+              <!-- Changed space-x-1 to gap-1 -->
+              <button class="nav-link text-gray-700 dark:text-gray-200 hover:text-mint dark:hover:text-mint font-medium transition duration-300 flex items-center gap-1 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-white/5">
                 <span class="text-sm">Dashboard</span>
                 <i class="fas fa-chevron-down text-xs"></i>
               </button>
-              <div class="absolute right-0 mt-2 w-56 bg-white dark:bg-[#222] border border-gray-100 dark:border-gray-700 rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform group-hover:translate-y-0 translate-y-2 z-50 overflow-hidden">
+              <div class="absolute right-0 rtl:right-auto rtl:left-0 mt-2 w-56 bg-white dark:bg-[#222] border border-gray-100 dark:border-gray-700 rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform group-hover:translate-y-0 translate-y-2 z-50 overflow-hidden">
+                <!-- Changed mr-2 to me-2 -->
                 <a href="admin-dashboard.html" class="block px-4 py-3 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-white/5 hover:text-mint transition duration-300">
-                  <i class="fas fa-user-shield mr-2"></i>Admin Dashboard
+                  <i class="fas fa-user-shield me-2"></i>Admin Dashboard
                 </a>
                 <a href="user-dashboard.html" class="block px-4 py-3 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-white/5 hover:text-mint transition duration-300">
-                  <i class="fas fa-user mr-2"></i>User Dashboard
+                  <i class="fas fa-user me-2"></i>User Dashboard
                 </a>
               </div>
             </div>
@@ -94,17 +99,20 @@
           </div>
         </div>
 
-        <div class="hidden xl:flex items-center space-x-2">
+        <!-- Changed space-x-2 to gap-2 -->
+        <div class="hidden xl:flex items-center gap-2">
           <!-- Styled Login as secondary CTA without an icon -->
           <a href="login.html" class="nav-button border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-200 hover:border-mint dark:hover:border-mint hover:text-mint dark:hover:text-mint px-5 py-2.5 rounded-full font-semibold transition duration-300 text-sm flex items-center whitespace-nowrap">
             Login
           </a>
 
-          <button id="rtl-toggle" class="nav-icon-button w-10 h-10 rounded-full bg-gray-100 dark:bg-white/10 hover:bg-gray-200 dark:hover:bg-white/20 flex items-center justify-center text-gray-700 dark:text-white transition duration-300 ml-2 text-xs font-semibold" title="Toggle RTL">
+          <!-- Changed ml-2 to ms-2 -->
+          <button id="rtl-toggle" class="nav-icon-button w-10 h-10 rounded-full bg-gray-100 dark:bg-white/10 hover:bg-gray-200 dark:hover:bg-white/20 flex items-center justify-center text-gray-700 dark:text-white transition duration-300 ms-2 text-xs font-semibold" title="Toggle RTL">
             RTL
           </button>
 
-          <button id="theme-toggle" class="nav-icon-button w-10 h-10 rounded-full bg-gray-100 dark:bg-white/10 hover:bg-gray-200 dark:hover:bg-white/20 flex items-center justify-center text-gray-700 dark:text-white transition duration-300 ml-2" title="Toggle Theme">
+          <!-- Changed ml-2 to ms-2 -->
+          <button id="theme-toggle" class="nav-icon-button w-10 h-10 rounded-full bg-gray-100 dark:bg-white/10 hover:bg-gray-200 dark:hover:bg-white/20 flex items-center justify-center text-gray-700 dark:text-white transition duration-300 ms-2" title="Toggle Theme">
             <i class="fas fa-moon dark:hidden text-sm"></i>
             <i class="fas fa-sun hidden dark:inline text-sm"></i>
           </button>
@@ -130,7 +138,8 @@
             <span class="text-sm font-medium">Home</span>
             <i class="fas fa-chevron-down text-xs transition-transform duration-300" id="mobile-home-icon"></i>
           </button>
-          <div id="mobile-home-menu" class="hidden pl-4 mt-1 space-y-1">
+          <!-- Changed pl-4 to ps-4 -->
+          <div id="mobile-home-menu" class="hidden ps-4 mt-1 space-y-1">
             <a href="index.html" class="block px-4 py-2 text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-white/5 hover:text-mint rounded-lg transition duration-300 text-sm">Home Page 1</a>
             <a href="home-2.html" class="block px-4 py-2 text-mint bg-gray-50 dark:bg-white/5 rounded-lg transition duration-300 text-sm">Home Page 2</a>
           </div>
@@ -148,12 +157,14 @@
             <span class="text-sm font-medium">Dashboard</span>
             <i class="fas fa-chevron-down text-xs transition-transform duration-300" id="mobile-dashboard-icon"></i>
           </button>
-          <div id="mobile-dashboard-menu" class="hidden pl-4 mt-1 space-y-1">
+          <!-- Changed pl-4 to ps-4 -->
+          <div id="mobile-dashboard-menu" class="hidden ps-4 mt-1 space-y-1">
+            <!-- Changed mr-2 to me-2 -->
             <a href="admin-dashboard.html" class="block px-4 py-2 text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-white/5 hover:text-mint rounded-lg transition duration-300 text-sm">
-              <i class="fas fa-user-shield mr-2"></i>Admin Dashboard
+              <i class="fas fa-user-shield me-2"></i>Admin Dashboard
             </a>
             <a href="user-dashboard.html" class="block px-4 py-2 text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-white/5 hover:text-mint rounded-lg transition duration-300 text-sm">
-              <i class="fas fa-user mr-2"></i>User Dashboard
+              <i class="fas fa-user me-2"></i>User Dashboard
             </a>
           </div>
         </div>
@@ -166,12 +177,13 @@
           </div>
 
           <div class="grid grid-cols-2 gap-3 mt-2">
+            <!-- Changed mr-2 to me-2 -->
             <button id="mobile-rtl-toggle" class="bg-gray-100 dark:bg-white/5 hover:bg-gray-200 dark:hover:bg-white/10 text-gray-800 dark:text-white px-4 py-3 rounded-lg font-medium text-center transition duration-300 text-sm">
-              <i class="fas fa-language mr-2"></i>RTL
+              <i class="fas fa-language me-2"></i>RTL
             </button>
             <button id="mobile-theme-toggle" class="bg-gray-100 dark:bg-white/5 hover:bg-gray-200 dark:hover:bg-white/10 text-gray-800 dark:text-white px-4 py-3 rounded-lg font-medium text-center transition duration-300 text-sm">
-              <i class="fas fa-moon mr-2 dark:hidden"></i>
-              <i class="fas fa-sun mr-2 hidden dark:inline"></i>
+              <i class="fas fa-moon me-2 dark:hidden"></i>
+              <i class="fas fa-sun me-2 hidden dark:inline"></i>
               <span>Theme</span>
             </button>
           </div>
@@ -184,7 +196,6 @@
     
     <section id="home-2" class="relative flex-grow min-h-[calc(100vh-80px)] flex items-center justify-center overflow-hidden">
       <div class="absolute inset-0 z-0">
-        <!-- Updated hero background image with local path -->
         <img src="image/pexels-andrea-prochilo-3062027-31234759.jpg" alt="Therapeutic Touch Background" class="w-full h-full object-cover">
         <div class="absolute inset-0 bg-dark-gray/85 dark:bg-[#1a1a1a]/95"></div>
       </div>
@@ -195,7 +206,8 @@
       <div class="relative z-10 w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center animate-fade-in py-12">
         
         <div class="inline-flex items-center px-5 py-2 mb-8 bg-white/5 backdrop-blur-md border border-mint/30 rounded-full">
-          <i class="fas fa-heart text-mint text-sm mr-2"></i>
+          <!-- Changed mr-2 to me-2 -->
+          <i class="fas fa-heart text-mint text-sm me-2"></i>
           <span class="text-sm font-semibold tracking-wider text-cyan uppercase">Voted #1 Therapeutic Touch Agency</span>
         </div>
 
@@ -313,7 +325,8 @@
                     <i class="fas fa-brain"></i>
                   </div>
                 </div>
-                <div class="ml-4">
+                <!-- Changed ml-4 to ms-4 -->
+                <div class="ms-4">
                   <h4 class="text-xl font-medium text-gray-900 dark:text-white">Oxytocin Release</h4>
                   <p class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
                     Often called the "cuddle hormone," oxytocin floods your system during sustained platonic touch, immediately lowering anxiety and promoting feelings of deep trust and safety.
@@ -327,7 +340,8 @@
                     <i class="fas fa-heartbeat"></i>
                   </div>
                 </div>
-                <div class="ml-4">
+                <!-- Changed ml-4 to ms-4 -->
+                <div class="ms-4">
                   <h4 class="text-xl font-medium text-gray-900 dark:text-white">Nervous System Regulation</h4>
                   <p class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
                     Therapeutic cuddling dramatically decreases cortisol (the stress hormone) levels, lowering your heart rate and blood pressure, shifting you from "fight or flight" to "rest and digest."
@@ -341,7 +355,8 @@
                     <i class="fas fa-smile-beam"></i>
                   </div>
                 </div>
-                <div class="ml-4">
+                <!-- Changed ml-4 to ms-4 -->
+                <div class="ms-4">
                   <h4 class="text-xl font-medium text-gray-900 dark:text-white">Combats Loneliness</h4>
                   <p class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
                     Even if you are socially active, you can still experience touch isolation. Our sessions fill that void, improving overall mood and combating symptoms of mild depression.
@@ -386,10 +401,10 @@
           
           <div class="bg-white dark:bg-[#1a1a1a] rounded-2xl overflow-hidden shadow-lg border border-gray-100 dark:border-white/5 hover:-translate-y-2 transition-transform duration-300">
             <div class="h-48 overflow-hidden relative">
-              <!-- Local image Sarah Jenkins -->
               <img src="image/Sarah Jenkins.jpg" alt="Sarah Jenkins" class="w-full h-full object-cover">
               <div class="absolute top-4 right-4 bg-white/90 dark:bg-black/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-medium text-mint flex items-center">
-                <i class="fas fa-check-circle mr-1"></i> Certified
+                <!-- Changed mr-1 to me-1 -->
+                <i class="fas fa-check-circle me-1"></i> Certified
               </div>
             </div>
             <div class="p-6">
@@ -410,10 +425,10 @@
 
           <div class="bg-white dark:bg-[#1a1a1a] rounded-2xl overflow-hidden shadow-lg border border-gray-100 dark:border-white/5 hover:-translate-y-2 transition-transform duration-300">
             <div class="h-48 overflow-hidden relative">
-              <!-- Local image David Chen -->
               <img src="image/David Chen.jpg" alt="David Chen" class="w-full h-full object-cover">
               <div class="absolute top-4 right-4 bg-white/90 dark:bg-black/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-medium text-mint flex items-center">
-                <i class="fas fa-check-circle mr-1"></i> Certified
+                <!-- Changed mr-1 to me-1 -->
+                <i class="fas fa-check-circle me-1"></i> Certified
               </div>
             </div>
             <div class="p-6">
@@ -434,10 +449,10 @@
 
           <div class="bg-white dark:bg-[#1a1a1a] rounded-2xl overflow-hidden shadow-lg border border-gray-100 dark:border-white/5 hover:-translate-y-2 transition-transform duration-300">
             <div class="h-48 overflow-hidden relative">
-              <!-- Local image Aisha Patel -->
               <img src="image/Aisha Patel.jpg" alt="Aisha Patel" class="w-full h-full object-cover">
               <div class="absolute top-4 right-4 bg-white/90 dark:bg-black/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-medium text-mint flex items-center">
-                <i class="fas fa-check-circle mr-1"></i> Certified
+                <!-- Changed mr-1 to me-1 -->
+                <i class="fas fa-check-circle me-1"></i> Certified
               </div>
             </div>
             <div class="p-6">
@@ -458,17 +473,17 @@
 
         </div>
         <div class="mt-12 text-center">
+          <!-- Changed ml-2 to ms-2 and added rtl:rotate-180 for the arrow -->
           <a href="therapists.html" class="inline-flex items-center text-mint font-semibold hover:text-cyan transition-colors duration-300">
-            View All Therapists <i class="fas fa-arrow-right ml-2"></i>
+            View All Therapists <i class="fas fa-arrow-right ms-2 rtl:rotate-180"></i>
           </a>
         </div>
       </div>
     </section>
 
-    <!-- Success Stories section - Centered Heading & Subheading -->
+    <!-- Success Stories section -->
     <section class="py-24 bg-white dark:bg-dark-gray transition-colors duration-300">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <!-- Centered heading and description -->
         <div class="text-center max-w-3xl mx-auto mb-16">
           <h2 class="text-sm font-medium text-cyan tracking-widest uppercase mb-2">Success Stories</h2>
           <h3 class="text-4xl font-semibold text-gray-900 dark:text-white">Voices of Healing</h3>
@@ -478,7 +493,7 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
           
           <div class="bg-gray-50 dark:bg-[#1a1a1a] p-8 rounded-2xl border border-gray-100 dark:border-white/5 relative">
-            <i class="fas fa-quote-left text-4xl text-mint/20 absolute top-6 right-6"></i>
+            <i class="fas fa-quote-left text-4xl text-mint/20 absolute top-6 right-6 rtl:left-6 rtl:right-auto rtl:-scale-x-100"></i>
             <div class="flex text-yellow-400 mb-4 text-sm">
               <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
             </div>
@@ -486,7 +501,8 @@
               "After losing my spouse, the loneliness was physical. TheraTouch gave me a safe, non-judgmental space to just be held. It literally saved my mental health during the darkest year of my life."
             </p>
             <div class="flex items-center">
-              <div class="w-12 h-12 bg-mint/30 rounded-full flex items-center justify-center text-mint font-semibold text-xl mr-4">M</div>
+              <!-- Changed mr-4 to me-4 -->
+              <div class="w-12 h-12 bg-mint/30 rounded-full flex items-center justify-center text-mint font-semibold text-xl me-4">M</div>
               <div>
                 <h5 class="font-medium text-gray-900 dark:text-white">Marcus T.</h5>
                 <p class="text-xs text-gray-500">Client for 8 months</p>
@@ -495,7 +511,7 @@
           </div>
 
           <div class="bg-gray-50 dark:bg-[#1a1a1a] p-8 rounded-2xl border border-gray-100 dark:border-white/5 relative">
-            <i class="fas fa-quote-left text-4xl text-cyan/20 absolute top-6 right-6"></i>
+            <i class="fas fa-quote-left text-4xl text-cyan/20 absolute top-6 right-6 rtl:left-6 rtl:right-auto rtl:-scale-x-100"></i>
             <div class="flex text-yellow-400 mb-4 text-sm">
               <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
             </div>
@@ -503,7 +519,8 @@
               "I work a high-stress corporate job and suffer from severe anxiety. Bi-weekly sessions with Sarah have done more for regulating my nervous system than years of traditional talk therapy alone."
             </p>
             <div class="flex items-center">
-              <div class="w-12 h-12 bg-cyan/30 rounded-full flex items-center justify-center text-cyan font-semibold text-xl mr-4">E</div>
+              <!-- Changed mr-4 to me-4 -->
+              <div class="w-12 h-12 bg-cyan/30 rounded-full flex items-center justify-center text-cyan font-semibold text-xl me-4">E</div>
               <div>
                 <h5 class="font-medium text-gray-900 dark:text-white">Elena R.</h5>
                 <p class="text-xs text-gray-500">Client for 1.5 years</p>
@@ -512,7 +529,7 @@
           </div>
 
           <div class="bg-gray-50 dark:bg-[#1a1a1a] p-8 rounded-2xl border border-gray-100 dark:border-white/5 relative">
-            <i class="fas fa-quote-left text-4xl text-mint/20 absolute top-6 right-6"></i>
+            <i class="fas fa-quote-left text-4xl text-mint/20 absolute top-6 right-6 rtl:left-6 rtl:right-auto rtl:-scale-x-100"></i>
             <div class="flex text-yellow-400 mb-4 text-sm">
               <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
             </div>
@@ -520,7 +537,8 @@
               "I was so nervous before my first session. David made sure everything was strictly platonic and focused entirely on my comfort. The boundary setting was empowering, and the cuddling was profoundly relaxing."
             </p>
             <div class="flex items-center">
-              <div class="w-12 h-12 bg-purple-500/30 rounded-full flex items-center justify-center text-purple-500 font-semibold text-xl mr-4">J</div>
+              <!-- Changed mr-4 to me-4 -->
+              <div class="w-12 h-12 bg-purple-500/30 rounded-full flex items-center justify-center text-purple-500 font-semibold text-xl me-4">J</div>
               <div>
                 <h5 class="font-medium text-gray-900 dark:text-white">Jordan K.</h5>
                 <p class="text-xs text-gray-500">Client for 3 months</p>
@@ -543,36 +561,41 @@
             <p class="text-lg text-gray-700 dark:text-gray-300 mb-6">
               TheraTouch is a strictly non-sexual, purely platonic service. We maintain rigorous standards to ensure the complete safety, dignity, and comfort of both our clients and our therapists.
             </p>
+            <!-- Changed ml-2 to ms-2 -->
             <a href="code-of-conduct.html" class="inline-flex items-center justify-center px-6 py-3 bg-dark-gray dark:bg-white text-white dark:text-dark-gray rounded-lg font-semibold transition-transform transform hover:-translate-y-1">
-              Read Full Code of Conduct <i class="fas fa-file-contract ml-2"></i>
+              Read Full Code of Conduct <i class="fas fa-file-contract ms-2"></i>
             </a>
           </div>
 
           <div class="md:w-1/2 w-full bg-white dark:bg-[#1a1a1a] rounded-2xl p-8 shadow-lg border border-gray-100 dark:border-white/10">
             <ul class="space-y-4">
               <li class="flex items-start">
-                <i class="fas fa-shield-alt text-mint mt-1 mr-4 text-xl"></i>
+                <!-- Changed mr-4 to me-4 -->
+                <i class="fas fa-shield-alt text-mint mt-1 me-4 text-xl"></i>
                 <div>
                   <h5 class="font-medium text-gray-900 dark:text-white">Strictly Platonic</h5>
                   <p class="text-sm text-gray-600 dark:text-gray-400">Zero tolerance for sexual behavior. Clothing remains on at all times (minimum of tank tops and long pants).</p>
                 </div>
               </li>
               <li class="flex items-start">
-                <i class="fas fa-hand-paper text-cyan mt-1 mr-4 text-xl"></i>
+                <!-- Changed mr-4 to me-4 -->
+                <i class="fas fa-hand-paper text-cyan mt-1 me-4 text-xl"></i>
                 <div>
                   <h5 class="font-medium text-gray-900 dark:text-white">Explicit Consent</h5>
                   <p class="text-sm text-gray-600 dark:text-gray-400">Every touch is negotiated. "No" is a complete sentence and is celebrated in our spaces.</p>
                 </div>
               </li>
               <li class="flex items-start">
-                <i class="fas fa-spray-can text-mint mt-1 mr-4 text-xl"></i>
+                <!-- Changed mr-4 to me-4 -->
+                <i class="fas fa-spray-can text-mint mt-1 me-4 text-xl"></i>
                 <div>
                   <h5 class="font-medium text-gray-900 dark:text-white">Hygiene Standards</h5>
                   <p class="text-sm text-gray-600 dark:text-gray-400">Both clients and therapists must shower prior to sessions, wear clean clothes, and avoid strong perfumes.</p>
                 </div>
               </li>
               <li class="flex items-start">
-                <i class="fas fa-video text-cyan mt-1 mr-4 text-xl"></i>
+                <!-- Changed mr-4 to me-4 -->
+                <i class="fas fa-video text-cyan mt-1 me-4 text-xl"></i>
                 <div>
                   <h5 class="font-medium text-gray-900 dark:text-white">Secure Environments</h5>
                   <p class="text-sm text-gray-600 dark:text-gray-400">In-studio sessions are monitored externally, and initial out-call meetings occur in public spaces.</p>
@@ -587,7 +610,6 @@
 
   </main>
 
-  <!-- Modified: Removed border-t-4 border-mint from the footer -->
   <footer class="bg-dark-gray text-white pt-20 pb-10 mt-auto">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
@@ -638,6 +660,7 @@
 
         <div>
           <h4 class="text-xl font-medium mb-6 text-white">Contact Us</h4>
+          <!-- Footer lists already utilize gap-3 efficiently, which naturally conforms to RTL orientation -->
           <ul class="space-y-4">
             <li class="flex items-start gap-3">
               <i class="fas fa-map-marker-alt text-mint mt-1"></i>
